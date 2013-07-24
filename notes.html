@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>Crowd Surfing</title>
+	
+	<link rel="stylesheet" href="styles/mian.css?24">
+	<script type="text/javascript" src="scripts/common.js"></script>
+	
+	<script type="text/javascript">
+		cm.onload(function(){
+			// Disable main scroll
+			(function(){
+				document.body.addEventListener('touchmove', function(e){
+					e.preventDefault();
+				}, false);
+				var els = document.querySelectorAll('.scroll');
+				Array.prototype.forEach.call(els, function(item){
+					item.addEventListener('touchmove', function(e){
+						e.stopPropagation();
+					}, false);
+				});
+			})();
+			// Avatars Sample
+			(function(){
+				var els = document.querySelectorAll('.avatars-list li');
+				Array.prototype.forEach.call(els, function(item, i){
+					var a = item.querySelector('a'),
+						img = item.querySelector('img');
+						
+					setTimeout(function(){
+						cm.addClass(a, 'loaded');
+						setTimeout(function(){
+							cm.addClass(img, 'loaded');
+						}, 100)
+					}, i * 100)
+				});
+			})();
+			// Toggle Menu Sample
+			(function(){
+				var button = cm.getByClass('menu-button')[0],
+					container = cm.getByClass('fixed-layout')[0],
+					handler = function(){
+						if(isOpen){
+							cm.removeClass(container, 'open');
+						}else{
+							cm.addClass(container, 'open');
+						}
+						isOpen = !isOpen;
+					},
+					isOpen = false;
+				cm.addEvent(button, 'mousedown', handler);
+				cm.addEvent(button, 'touchstart', handler);
+			})();
+		});
+	</script>
+</head>
+
+<body>
+
+<div class="fixed-layout main-layout inner-scroll">
+	
+	<div class="left-side">
+	</div>
+	
+	<div class="right-side">
+	
+		<div class="header">
+			<div class="inner">
+				<div class="menu-button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="main-menu">
+					<ul>
+						<li class="tab-crowd">
+							<a href="crowd.html">Crowd</a>
+						</li>
+						<li class="tab-notes active">
+							<a href="#">Notes</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content scroll">
+			<div class="page-crowd">
+				<ul class="avatars-list clear">
+					<li>
+						<a href="#">
+							<span class="mark"></span>
+							<img src="images/samples/crowd/1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/2.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/3.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/4.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/5.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/6.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/7.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/8.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/9.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/10.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/11.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/12.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/13.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/14.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/15.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/16.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/17.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/18.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/19.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/20.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/21.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/22.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/23.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/24.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/2.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/3.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/4.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/5.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/6.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/7.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/samples/crowd/8.jpg" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+</body>
+</html>
