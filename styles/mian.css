@@ -614,6 +614,80 @@ button[disabled].button-primary
 	        transform: scale(1);
 }
 
+.user-box.in-profile {
+	padding: 4px 10px 5px;
+	border: none;
+}
+.user-box.in-profile .image {
+	width: 130px;
+	height: 130px;
+	position: relative;
+	margin: 0 18px 0 0;
+}
+.user-box.in-profile .image:before {
+	width: 130px;
+	height: 130px;
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: -1;
+	content: ' ';
+	background: #333739;
+}
+.user-box.in-profile .name {
+	line-height: 28px;
+	font-size: 24px;
+	padding: 52px 0 0 0;
+}
+.user-box.in-profile .country {
+	line-height: 20px;
+	font-size: 17px;
+	padding: 4px 0 0 0;
+}
+
+/* Comments */
+
+.comments-list {
+	padding: 0 5px;
+}
+.comments-list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.comments-list ul li {
+	position: relative;
+	padding: 0 0 6px 21px;
+	background: url(../images/1/comment.png) no-repeat 0 6px;
+	background-size: 12px 12px;
+}
+.comments-list ul li:not(:last-child) {
+	margin: 0 0 9px;
+}
+.comments-list ul li:not(:last-child):after {
+	height: 0;
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+	border-top: 1px solid #36383a;
+	border-bottom: 1px solid #111213;
+}
+.comments-list .text,
+.comments-list .date {
+	line-height: 20px;
+	font-size: 15px;
+	color: #b3b3b3;
+}
+.comments-list .date {
+	text-align: right;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
 /* Arrow Backward */
 
 .arrow-back {
@@ -1473,6 +1547,12 @@ button[disabled].button-primary
 	z-index: 2;
 	bottom: 0;
 	left: 0;
+}
+
+/* ******* PROFILE ******* */
+
+.page-profile .comments-list {
+	margin: 16px 0 0 0;
 }
 
 /* ******* ADAPTIVE ******* */
