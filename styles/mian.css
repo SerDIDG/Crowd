@@ -14,6 +14,9 @@
        -moz-user-select: none;
             user-select: none;
 }
+.accelerate * {
+    -webkit-transform: translate3d(0,0,0);
+}
 html {
     width: 100%;
     height: 100%;
@@ -496,6 +499,7 @@ button[disabled].button-primary
             box-sizing: border-box;
 }
 .avatars-list > li > .inner,
+.avatars-list > li > .inner-simple,
 .avatars-list > li > a {
     height: 0;
     display: block;
@@ -537,7 +541,16 @@ button[disabled].button-primary
          -o-transform: scaleY(1);
             transform: scaleY(1);
 }
-
+.avatars-list > li > .inner-simple > img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    visibility: hidden;
+}
+.avatars-list > li > .inner-simple > img.loaded{
+    visibility: visible;
+}
 /* User Box */
 
 .user-box {
