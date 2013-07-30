@@ -24,21 +24,6 @@
 					}, false);
 				});
 			})();
-			// Avatars Sample
-			(function(){
-				var els = document.querySelectorAll('.avatars-list li');
-				Array.prototype.forEach.call(els, function(item, i){
-					var a = item.querySelector('a'),
-						img = item.querySelector('img');
-						
-					setTimeout(function(){
-						cm.addClass(a, 'loaded');
-						setTimeout(function(){
-							cm.addClass(img, 'loaded');
-						}, 100)
-					}, i * 100)
-				});
-			})();
 			// Toggle Menu Sample
 			(function(){
 				var button = cm.getByClass('menu-button')[0],
@@ -64,6 +49,15 @@
 <div class="fixed-layout main-layout inner-scroll">
 	
 	<div class="left-side">
+		<div class="title">Menu</div>
+		<div class="user-box">
+			<div class="image">
+				<img src="images/samples/avatar-menu.jpg" alt="">
+			</div>
+			<div class="name">Alice R.</div>
+			<div class="country">USA</div>
+		</div>
+		<a class="leftmenu-button signout" href="start.html">Sing out</a>
 	</div>
 	
 	<div class="right-side">
@@ -89,174 +83,45 @@
 		</div>
 		
 		<div class="content scroll">
-			<div class="page-crowd">
-				<ul class="avatars-list clear">
-					<li>
-						<a href="#">
-							<span class="mark"></span>
-							<img src="images/samples/crowd/1.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/2.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/3.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/4.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/5.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/6.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/7.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/8.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/9.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/10.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/11.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/12.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/13.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/14.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/15.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/16.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/17.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/18.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/19.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/20.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/21.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/22.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/23.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/24.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/1.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/2.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/3.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/4.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/5.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/6.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/7.jpg" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/samples/crowd/8.jpg" alt="">
-						</a>
-					</li>
-				</ul>
-			</div>
+			<div class="page-notes">
+            	<ul class="posts-list">
+                	<li>
+                    	<div class="post">
+                        	<div class="post-image">
+                            	<img src="images/samples/notes-image-preview.jpg" alt="">
+                            </div>
+                            <div class="post-text">Here are couple photos from my concert.</div>
+                            <div class="user-box clear">
+                                <div class="image">
+                                    <img src="images/samples/avatar-notes.jpg" alt="">
+                                </div>
+                                <div class="name">Bob C.</div>
+                                <div class="time">1 hour ago</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="post">
+                            <div class="post-text">Italian wine is wine produced in Italy, a country which is home to some of the oldest wine-producing...</div>
+                            <div class="user-box clear">
+                                <div class="image">
+                                    <img src="images/samples/avatar-notes.jpg" alt="">
+                                </div>
+                                <div class="name">Bob C.</div>
+                                <div class="time">1 hour ago</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 		</div>
 	
 	</div>
+</div>
+
+<div class="post-adder fadein">
+    <div class="text"></div>
+    <div class="photo"></div>
 </div>
 
 </body>

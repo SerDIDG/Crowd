@@ -78,6 +78,15 @@ h4 {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
+.full-scroll {
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+.selectable {
+    -webkit-user-select: text;
+       -moz-user-select: text;
+            user-select: text;
+}
 
 /* ******* FORMS ******* */
 
@@ -605,7 +614,8 @@ button[disabled].button-primary
     display: block;
 }
 .user-box .name,
-.user-box .country {
+.user-box .country,
+.user-box .time {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -613,7 +623,8 @@ button[disabled].button-primary
     font-size: 18px;
     color: #ffffff;
 }
-.user-box .country {
+.user-box .country,
+.user-box .time {
     line-height: 16px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -697,6 +708,156 @@ button[disabled].button-primary
     line-height: 20px;
     font-size: 17px;
     padding: 4px 0 0 0;
+}
+
+/* Posts */
+
+.posts-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.posts-list li {
+	position: relative;
+}
+.posts-list li:not(:last-child) {
+    margin: 0 0 15px;
+}
+.posts-list li:not(:last-child):after {
+    height: 0;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 48px;
+    content: ' ';
+    border-top: 1px solid #36383a;
+    border-bottom: 1px solid #111213;
+}
+.post {
+}
+.post.is-self {
+	padding: 4px;
+}
+.post-image + .post-text {
+	margin: 6px 0 0 0;
+}
+.post-text + .post-image {
+	margin: 12px 0 0 0;
+}
+.post-image img {
+	display: block;
+}
+.post .user-box {
+	margin: 10px 0 0 0;
+	padding: 0;
+	border: none;
+}
+.post .user-box .name {
+	position: relative;
+	top: -4px;
+}
+.post .user-box .time {
+	position: relative;
+	top: -5px;
+}
+
+/* Post Adder */
+
+.post-adder {
+	width: 66px;
+	height: 66px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 1000;
+}
+.post-adder:after,
+.post-adder .photo,
+.post-adder .text {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.7);
+	background-size: 100% 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+	   -mos-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-in-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
+}
+.post-adder:after {
+	display: block;
+	content: ' ';
+	z-index: 3;
+	background-image: url(../images/1/add.png);
+}
+.post-adder .photo {
+	background-image: url(../images/1/add-photo.png);
+	opacity: 0;
+}
+.post-adder .text {
+	background-image: url(../images/1/add-text.png);
+	opacity: 0;
+}
+.post-adder:active:after,
+.post-adder .photo.fadein,
+.post-adder .text.fadein {
+	background-color: #1873ba;
+    background-color: -webkit-linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
+    background-color:    -moz-linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
+    background-color:     -ms-linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
+    background-color:      -o-linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
+    background-color:         linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
+}
+/* Does not work on iOS, but creates some ugly visual bugs, use class "fadein" for it.
+.post-adder:active:after,
+.post-adder .photo:hover,
+.post-adder .text:hover {
+	background-color: #1873ba;
+    background-color: -webkit-linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
+    background-color:    -moz-linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
+    background-color:     -ms-linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
+    background-color:      -o-linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
+    background-color:         linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
+}
+*/
+.post-adder:active .photo {
+	opacity: 1;
+	-webkit-transform: translateY(-67px);
+	   -moz-transform: translateY(-67px);
+	    -ms-transform: translateY(-67px);
+	     -o-transform: translateY(-67px);
+	        transform: translateY(-67px);
+}
+.post-adder:active .text {
+	opacity: 1;
+	-webkit-transform: translateX(-67px);
+	   -moz-transform: translateX(-67px);
+	    -ms-transform: translateX(-67px);
+	     -o-transform: translateX(-67px);
+	        transform: translateX(-67px);
+}
+
+/* Post Button */
+
+.post-button {
+	padding: 4px;
+	position: fixed;
+	z-index: 1000;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+.post-button input {
+	width: 90px;
+	height: 36px;
+	float: right;
+	line-height: 36px;
+	font-size: 18px;
 }
 
 /* Comments */
@@ -854,15 +1015,15 @@ button[disabled].button-primary
 }
 
 .back-button.in-header {
-    width: 10%;
+	min-width: 10%;
     height: 41px;
-    margin: 0;
-    position: absolute;
+	position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-    padding-right: 0;
     float: none;
+    margin: 0;
+    padding-right: 0;
     background: none;
     line-height: 41px;
     color: #fff;
@@ -875,6 +1036,19 @@ button[disabled].button-primary
 }
 .back-button.in-header .arrow-back:after,
 .back-button.in-header .arrow-back:before {
+    background: #fff;
+}
+
+.back-button.in-footer {
+	margin: 0;
+	background: none;
+	color: #fff;
+}
+.back-button.in-footer:after {
+	display: none;
+}
+.back-button.in-footer .arrow-back:after,
+.back-button.in-footer .arrow-back:before {
     background: #fff;
 }
 
@@ -1163,6 +1337,59 @@ button[disabled].button-primary
     left: 8px;
 }
 
+/* Uploader */
+
+.uploader {
+	padding: 4px;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: #0f0f0f;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s ease-in-out;
+       -moz-transition: opacity 0.2s ease-in-out;
+        -ms-transition: opacity 0.2s ease-in-out;
+         -o-transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
+}
+.uploader.fadein {
+    opacity: 1;
+}
+.uploader .close {
+	width: 33px;
+	height: 33px;
+	float: right;
+	margin: 0 0 0 6px;
+	background: url(../images/1/close.png);
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+.uploader .image {
+	width: 33px;
+	height: 33px;
+	margin: 0 8px 0 0;
+	overflow: hidden;
+	float: left;
+}
+.uploader .image img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.uploader .bar {
+	height: 11px;
+	overflow: hidden;
+	margin: 11px 0 0 0;
+	background: #484848;
+}
+.uploader .progress {
+	width: 0;
+	height: 11px;
+	background: #1974bc;
+}
+
 /* Dialog */
 
 .dialog-container {
@@ -1446,13 +1673,20 @@ button[disabled].button-primary
     color: #fff;
 }
 
-/* Crowd List */
+/* Crowd Page */
 
 .page-crowd {
     position: relative;
 }
 .page-crowd .avatars-list {
     padding: 2px;
+}
+
+/* Notes Page */
+
+.page-notes {
+	position: relative;
+	padding: 4px;
 }
 
 /* ******* START LAYOUT ******* */
@@ -1653,6 +1887,57 @@ button[disabled].button-primary
 	margin: 0 0 26px;
 }
 
+/* ******* PICTURE LAYOUT ******* */
+
+.picture-layout {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.picture-layout .content {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.picture-layout .content > .inner {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.picture-layout .content img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	display: block;
+}
+.picture-layout .footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	background: rgba(0,0,0,0.8);
+	opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s linear 0.2s,opacity 0.2s linear;
+       -moz-transition: visibility 0s linear 0.2s,opacity 0.2s linear;
+        -ms-transition: opacity 0.2s linear;
+         -o-transition: opacity 0.2s linear;
+            transition: opacity 0.2s linear;
+}
+.picture-layout .footer.fadein {
+	opacity: 1;
+    visibility: visible;
+}
+.picture-layout .footer .text {
+	padding: 6px 6px 0;
+	margin: 0 0 -5px;
+	clear: both;
+	color: #fff;
+}
+
 /* ******* ADAPTIVE ******* */
 
 /* Images For Retina */
@@ -1716,6 +2001,18 @@ button[disabled].button-primary
 	}
 	.profile-image {
 		background-image: url(../images/2/profile-image.png);
+	}
+	.post-adder:after {
+		background-image: url(../images/2/add.png);
+	}
+	.post-adder .photo {
+		background-image: url(../images/2/add-photo.png);
+	}
+	.post-adder .text {
+		background-image: url(../images/2/add-text.png);
+	}
+	.uploader .close {
+		background-image: url(../images/2/close.png);
 	}
 
 }
