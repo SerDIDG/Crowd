@@ -6,7 +6,10 @@
 /* ******* TAGS ******* */
 
 * {
+	line-height: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+	color: #b3b3b3;
     outline: none;
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -54,9 +57,6 @@ img {
 h4, p {
     margin: 0 0 20px;
     padding: 0;
-    line-height: 20px;
-    font-size: 15px;
-    color: #b3b3b3;
 }
 h4 {
     margin: 0;
@@ -382,7 +382,7 @@ button[disabled].button-primary
 
 /* ******* DEFAULT LAYOUTS ******* */
 
-/* Structure */
+/* Fixed Layout */
 
 .fixed-layout {
     width: 100%;
@@ -482,6 +482,40 @@ button[disabled].button-primary
             transform: translateX(50%);
 }
 
+
+/* Single Layout */
+
+.single-layout {
+	width: 100%;
+	height: 100%;
+	position: relative;
+    background: -webkit-linear-gradient(top, #242424 0%, #0f0f0f 70px);
+    background:    -moz-linear-gradient(top, #242424 0%, #0f0f0f 70px);
+    background:     -ms-linear-gradient(top, #242424 0%, #0f0f0f 70px);
+    background:      -o-linear-gradient(top, #242424 0%, #0f0f0f 70px);
+    background:         linear-gradient(top, #242424 0%, #0f0f0f 70px);
+}
+.single-layout > .inner {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.single-layout .centering {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 26px;
+}
+.single-layout .title {
+	margin: 0 0 22px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 28px;
+}
+.single-layout .descr {
+	padding: 12px 0 0 0;
+	margin: 0 0 32px;
+}
+
 /* Avatars List */
 
 .avatars-list {
@@ -551,6 +585,7 @@ button[disabled].button-primary
 .avatars-list > li > .inner-simple > img.loaded{
     visibility: visible;
 }
+
 /* User Box */
 
 .user-box {
@@ -698,7 +733,6 @@ button[disabled].button-primary
 .comments-list .date {
     line-height: 20px;
     font-size: 15px;
-    color: #b3b3b3;
 }
 .comments-list .date {
     text-align: right;
@@ -882,7 +916,6 @@ button[disabled].button-primary
     text-align: center;
     line-height: 76px;
     font-size: 28px;
-    color: #b3b3b3;
 }
 .header-inner {
     position: absolute;
@@ -988,7 +1021,6 @@ button[disabled].button-primary
     overflow: hidden;
     display: block;
     position: relative;
-    color: #fff;
     text-decoration: none;
 }
 .sign-join-item .small span,
@@ -998,6 +1030,7 @@ button[disabled].button-primary
     bottom: 3px;
     line-height: 22px;
     font-size: 22px;
+	color: #fff;
 }
 .sign-join-item .big span {
     top: 1px;
@@ -1592,6 +1625,34 @@ button[disabled].button-primary
     margin: 16px 0 0 0;
 }
 
+/* ******* PROFILE IMAGE ******* */
+
+.profile-image-layout {
+}
+.profile-image-layout input[type="button"]:last-child {
+	margin: 12px 0 0 0;
+}
+.profile-image {
+	width: 168px;
+	height: 168px;
+	margin: 0 auto 25px;
+	background: url(../images/1/profile-image.png);
+	background-size: contain;
+}
+.profile-image img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/* ****** FORGOT ****** */
+
+.forgot-layout {
+}
+.forgot-layout input[type="email"] {
+	margin: 0 0 26px;
+}
+
 /* ******* ADAPTIVE ******* */
 
 /* Images For Retina */
@@ -1630,7 +1691,7 @@ button[disabled].button-primary
 		background-image: url(../images/2/loader-big.png);
 	}
 	.loader.small {
-		 background-image: url(../images/2/loader-small.png);
+	    background-image: url(../images/2/loader-small.png);
 	}
 	.refresher .circle {
 		background-image: url(../images/2/refresher-big.png);
@@ -1652,6 +1713,9 @@ button[disabled].button-primary
 	}
 	.comments-list ul li {
 		background-image: url(../images/2/comment.png);
+	}
+	.profile-image {
+		background-image: url(../images/2/profile-image.png);
 	}
 
 }
