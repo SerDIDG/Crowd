@@ -26,7 +26,7 @@
 			})();
 			// Min-height
 			(function(){
-				document.body.style.minHeight = [document.body.offsetHeight, 'px'].join('');
+				document.querySelector('.sign-layout > .inner').style.height = [cm.getPageSize('winHeight'), 'px'].join('');
 			})();
 		});
 	</script>
