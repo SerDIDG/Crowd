@@ -575,7 +575,7 @@ button[disabled].button-primary
     list-style: none;
     font-size: 0;
 }
-.avatars-list > li {
+.avatars-list .item {
     width: 25%;
     float: left;
     padding: 2px;
@@ -583,9 +583,7 @@ button[disabled].button-primary
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.avatars-list > li > .inner,
-.avatars-list > li > .inner-simple,
-.avatars-list > li > a {
+.avatars-list .item .inner {
     height: 0;
     display: block;
     position: relative;
@@ -598,11 +596,10 @@ button[disabled].button-primary
     -o-transition: opacity 0.2s linear;
     transition: opacity 0.2s linear;
 }
-.avatars-list > li > .loaded {
+.avatars-list .item .inner.loaded {
     opacity: 1;
 }
-.avatars-list > li > .inner > img,
-.avatars-list > li > a > img {
+.avatars-list .item img {
     width: 100%;
     height: 100%;
     display: block;
@@ -618,22 +615,21 @@ button[disabled].button-primary
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-.avatars-list > li > .inner > img.loaded,
-.avatars-list > li > a > img.loaded {
+.avatars-list .item img.loaded {
     -webkit-transform: scaleY(1);
     -moz-transform: scaleY(1);
     -ms-transform: scaleY(1);
     -o-transform: scaleY(1);
     transform: scaleY(1);
 }
-.avatars-list > li > .inner-simple > img{
+.avatars-list .item .inner-simple img {
     width: 100%;
     height: 100%;
     display: block;
     position: absolute;
     visibility: hidden;
 }
-.avatars-list > li > .inner-simple > img.loaded{
+.avatars-list .item .inner-simple img.loaded {
     visibility: visible;
 }
 
@@ -1775,7 +1771,7 @@ button[disabled].button-primary
 .start-layout .avatars-list {
     padding: 1px 0 0 1px;
 }
-.start-layout .avatars-list > li {
+.start-layout .avatars-list .item {
     width: 16.6666%;
     padding: 0 1px 1px 0;
 }
