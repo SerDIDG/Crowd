@@ -575,6 +575,9 @@ button[disabled].button-primary
     list-style: none;
     font-size: 0;
 }
+.avatars-list .row {
+	font-size: 0;
+}
 .avatars-list .item {
     width: 25%;
     float: left;
