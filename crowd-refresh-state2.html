@@ -26,7 +26,7 @@
 			})();
 			// Avatars Sample
 			(function(){
-				var els = document.querySelectorAll('.avatars-list li');
+				var els = document.querySelectorAll('.avatars-list .item');
 				Array.prototype.forEach.call(els, function(item, i){
 					var a = item.querySelector('.inner'),
 						img = item.querySelector('img');
@@ -108,6 +108,8 @@
 			</div>
 			
 			<div class="page-crowd">
+				<div class="overlay-shadow"></div>
+				
 				<div class="avatars-list">
                 
                 	<div class="row clear">
