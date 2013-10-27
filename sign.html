@@ -7,7 +7,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<title>Crowd Surfing</title>
 	
-	<link rel="stylesheet" href="styles/mian.css?11">
+	<link rel="stylesheet" href="styles/main.css?11">
 	<script type="text/javascript" src="scripts/common.js"></script>
 	
 	<script type="text/javascript">
@@ -26,7 +26,7 @@
 			})();
 			// Min-height
 			(function(){
-				document.querySelector('.sign-layout > .inner').style.height = [cm.getPageSize('winHeight'), 'px'].join('');
+				//document.querySelector('.sign-layout > .inner').style.height = [cm.getPageSize('winHeight'), 'px'].join('');
 			})();
 		});
 	</script>
@@ -39,18 +39,26 @@
         <div class="header-big">Sign in</div>
 
         <div class="content">
-            <a class="sign-join-item facebook" href="#" data-rv-event="touchend:signin(fb)">
-                <img src="images/join-resizer.png" alt="">
-                <span class="small"><span>with</span></span>
-                <span class="big"><span>Facebook</span></span>
-            </a>
-            <a class="sign-join-item twitter" href="#" data-rv-event="touchend:signin(twitter)">
-               <img src="images/join-resizer.png" alt="">
-                <span class="small"><span>with</span></span>
-                <span class="big"><span>Twitter</span></span>
-            </a>
-            <div class="sign-join-item email-join">
-               <img src="images/join-resizer.png" alt="">
+            <div class="sign-boxes">
+                <a class="sign-box-item facebook" href="#" data-rv-event="touchend:signin(fb)">
+                    <span class="inner">
+                        <img src="images/join-resizer.png" alt="">
+                        <span class="small"><span>with</span></span>
+                        <span class="big"><span>Facebook</span></span>
+                    </span>
+                </a>
+                <a class="sign-box-item twitter" href="#" data-rv-event="touchend:signin(twitter)">
+                    <span class="inner">
+                        <img src="images/join-resizer.png" alt="">
+                        <span class="small"><span>with</span></span>
+                        <span class="big"><span>Twitter</span></span>
+                    </span>
+                </a>
+                <div class="sign-box-item email-join">
+                    <span class="inner">
+                        <img src="images/join-resizer.png" alt="">
+                    </span>
+                </div>
             </div>
         </div>
     </div>

@@ -63,6 +63,30 @@ h4 {
     font-weight: bold;
 }
 
+/* ******* ICONS ******* */
+
+.icon.minus {
+    width: 34px;
+    height: 41px;
+    background: url(../images/1/minus.png);
+    background-size: contain;
+}
+.icon.plus {
+    width: 34px;
+    height: 41px;
+    background: url(../images/1/plus.png);
+    background-size: contain;
+}
+.icon.close {
+    width: 33px;
+    height: 33px;
+    background: url(../images/1/close.png);
+    background-size: contain;
+}
+.icon.close.white {
+    background-image: url(../images/1/close-white.png);
+}
+
 /* ******* STATIC CLASSES ******* */
 
 .clear:after {
@@ -89,6 +113,10 @@ h4 {
 }
 
 /* ******* FORMS ******* */
+
+.form {
+    padding: 4px;
+}
 
 /* Input */
 
@@ -167,6 +195,48 @@ input.search,
     background-image: url(../images/1/input-search.png);
 }
 
+/* Textarea */
+
+textarea {
+    width: 100%;
+    min-height: 41px;
+    height: 88px;
+    display: block;
+    margin: 0 0 6px;
+    padding: 10px;
+    resize: vertical;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #2b2b2b none 100% 0 no-repeat;
+    background-size: 30px 40px;
+    border: none;
+    border-bottom: 1px solid #4b4b4b;
+    border-radius: 0;
+    box-shadow: none;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #999999;
+    opacity: 1;
+}
+textarea:-moz-placeholder {
+    color: #999999;
+    opacity: 1;
+}
+textarea::-moz-placeholder {
+    color: #999999;
+    opacity: 1;
+}
+textarea:-ms-input-placeholder {
+    color: #999999;
+    opacity: 1;
+}
+
 /* Select */
 
 select,
@@ -227,7 +297,7 @@ button.button-primary,
 .button-primary {
     background: #1873ba;
     background: -webkit-linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
-    background:         linear-gradient(to top, #1b8ce5 0%, #1873ba 100%);
+    background:         linear-gradient(to bottom, #1b8ce5 0%, #1873ba 100%);
 }
 input[disabled].button-primary,
 button[disabled].button-primary
@@ -244,6 +314,25 @@ button[disabled].button-primary
     height: 40px;
     background: url(../images/1/search-big.png) 0 0 no-repeat;
     background-size: 100% 100%;
+}
+
+/* Filter Line */
+
+.filter-line {
+    padding: 0 34px 0 0;
+    margin: 0 0 6px;
+    position: relative;
+}
+.filter-line .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.filter-line input,
+.filter-line textarea,
+.filter-line select {
+    margin: 0;
 }
 
 /* Checkline */
@@ -516,6 +605,20 @@ button[disabled].button-primary
     transform: translateX(50%);
 }
 
+.fixed-layout.has-footer-button.inner-scroll .content {
+    bottom: 92px;
+}
+.fixed-layout.has-footer-button.normal-scroll .content {
+    padding: 41px 0 92px 0;
+}
+.fixed-layout.has-footer-button .footer {
+    padding: 25px;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 
 /* Single Layout */
 
@@ -1019,6 +1122,18 @@ button[disabled].button-primary
     line-height: 76px;
     font-size: 28px;
 }
+.header-big .t1 {
+    padding: 2px 0 0 0;
+    line-height: 30px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.header-big .t2 {
+    line-height: 18px;
+    font-size: 15px;
+}
+.header-big.in-content {
+}
 .header-inner {
     position: absolute;
     top: 0;
@@ -1098,35 +1213,49 @@ button[disabled].button-primary
     margin-bottom: 0;
 }
 
-/* Sign / Join Items */
+/* Sign Boxes */
 
-.sign-join-item {
-    width: 100%;
-    height: 33.33%;
+.sign-boxes {
+    height: 100%;
+    position: relative;
+    display: flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+}
+
+.sign-box-item {
     display: block;
     position: relative;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
+    -webkit-flex: 1 1 0;
+            flex: 1 1 0;
 }
-.sign-join-item img {
+.sign-box-item > .inner {
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+.sign-box-item img {
     width: auto;
     height: 100%;
     display: block;
     float: left;
 	background-repeat: no-repeat;
 }
-.sign-join-item .small,
-.sign-join-item .big {
+.sign-box-item .small,
+.sign-box-item .big {
     height: 50%;
     overflow: hidden;
     display: block;
     position: relative;
     text-decoration: none;
 }
-.sign-join-item .small span,
-.sign-join-item .big span {
+.sign-box-item .small span,
+.sign-box-item .big span {
     position: absolute;
     left: 0;
     bottom: 3px;
@@ -1134,46 +1263,66 @@ button[disabled].button-primary
     font-size: 22px;
     color: #fff;
 }
-.sign-join-item .big span {
+.sign-box-item .big span {
     top: 1px;
     line-height: 32px;
     font-size: 32px;
 }
-.sign-join-item.facebook {
+.sign-box-item.facebook {
     background: #3d5b9b;
     border-top: 1px solid #647caf;
     border-bottom: 1px solid #2b3d63;
 }
-.sign-join-item.facebook img {
+.sign-box-item.facebook img {
     background-image: url(../images/svg/facebook.svg);
 	background-position:  48% 112%;
 	background-size: 40.32% auto;
 }
-.sign-join-item.twitter {
+.sign-box-item.twitter {
     background: #2b8cc0;
     border-top: 1px solid #55a3cd;
     border-bottom: 1px solid #173544;
 }
-.sign-join-item.twitter img {
+.sign-box-item.twitter img {
     background-image: url(../images/svg/twitter.svg);
 	background-position:  46% 128%;
 	background-size: 88.71% auto;
 }
-.sign-join-item.email {
+.sign-box-item.crowd {
+    background: #555759;
+    border-top: 1px solid #888a8b;
+    border-bottom: 1px solid #3b3d3e;
+}
+.sign-box-item.crowd img {
+    background-image: url(../images/1/join-crowd.png);
+    background-position:  48% 222%;
+    background-size: 80.00% auto;
+}
+.sign-box-item.google {
+    background: #d95333;
+    border-top: 1px solid #e48771;
+    border-bottom: 1px solid #973a24;
+}
+.sign-box-item.google img {
+    background-image: url(../images/1/join-gplus.png);
+    background-position:  48% 180%;
+    background-size: 80.00% auto;
+}
+.sign-box-item.email {
     background: #252627;
     border-top: 1px solid #515152;
     border-bottom: 1px solid #0a0a0a;
 }
-.sign-join-item.email img {
+.sign-box-item.email img {
     background-image: url(../images/svg/email.svg);
 	background-position:  50% 150.45%;
 	background-size: 70.16% auto;
 }
-.sign-join-item.email-join {
+.sign-box-item.email-join {
     /* border-top: 1px solid #3f3f3f; */
 	border-top: 1px solid transparent;
 }
-.sign-join-item.email-join img {
+.sign-box-item.email-join img {
     background-image: url(../images/svg/email.svg);
 	background-position: 46% 22%;
 	background-size: 70% auto;
@@ -1287,21 +1436,14 @@ button[disabled].button-primary
     background: #0f0f0f;
     opacity: 0;
     -webkit-transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 0.2s ease-in-out;
-    -ms-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
 }
 .uploader.fadein {
     opacity: 1;
 }
 .uploader .close {
-    width: 33px;
-    height: 33px;
     float: right;
     margin: 0 0 0 6px;
-    background: url(../images/1/close.png);
-    background-size: 100% 100%;
     cursor: pointer;
 }
 .uploader .image {
@@ -1328,6 +1470,46 @@ button[disabled].button-primary
     background: #1974bc;
 }
 
+/* Notification */
+
+.notification {
+    min-height: 33px;
+    padding: 0 33px 0 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #1a85d8;
+    box-shadow: 0 0 18px rgba(0,0,0,0.5);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
+}
+.notification.fadein {
+    opacity: 1;
+}
+.notification .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.notification .text {
+    width: 100%;
+    display: table;
+}
+.notification .text .inner {
+    height: 25px;
+    padding: 2px 4px;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 14px;
+    font-size: 12px;
+    color: #fff;
+}
+
 /* Dialog */
 
 .dialog-container {
@@ -1341,10 +1523,7 @@ button[disabled].button-primary
     opacity: 0;
     background: rgba(0,0,0,0.5);
     -webkit-transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 0.2s ease-in-out;
-    -ms-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
 }
 .dialog-container.transparent {
     background: transparent;
@@ -1744,6 +1923,53 @@ button[disabled].button-primary
     padding: 4px;
 }
 
+/* Invite Page */
+
+.page-invite {
+    height: 100%;
+    position: relative;
+}
+.page-invite .sign-boxes {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 76px;
+    bottom: 0;
+}
+.page-invite .sign-box-item img {
+    margin: 0 20px 0 0;
+}
+.page-invite .sign-box-item .small {
+    height: 45%;
+}
+.page-invite .sign-box-item .small span {
+    line-height: 19px;
+    font-size: 19px;
+}
+.page-invite .sign-box-item .big {
+    height: 55%;
+}
+.page-invite .sign-box-item .big span {
+    line-height: 27px;
+    font-size: 27px;
+}
+.page-invite .sign-box-item.facebook img {
+    background-position: 48% 250%;
+    background-size: 48% auto;
+}
+.page-invite .sign-box-item.twitter img {
+    background-position: 42% 128%;
+    background-size: 95% auto;
+}
+.page-invite .sign-box-item.google img {
+    background-position: 52% 198%;
+    background-size: 86% auto;
+}
+.page-invite .sign-box-item.email img {
+    background-position: 50% 214%;
+    background-size: 86% auto;
+}
+
 /* ******* START LAYOUT ******* */
 
 .start-layout {
@@ -2043,9 +2269,6 @@ button[disabled].button-primary
 
 /* ******* SEARCH PAGE ******* */
 
-.page-search {
-    padding: 4px;
-}
 .search-input {
     position: relative;
     margin: 0 0 12px;
@@ -2086,6 +2309,18 @@ button[disabled].button-primary
     font-size: 16px;
 }
 
+/* ******* PAGE INVITE CROWD ****** */
+
+.page-invite-crowd .avatars-list {
+    padding: 2px;
+}
+.page-invite-crowd .avatars-list .item .inner.loaded {
+    opacity: 0.4;
+}
+.page-invite-crowd .avatars-list .item.active .inner.loaded {
+    opacity: 1;
+}
+
 /* ******* ADAPTIVE ******* */
 
 /* Images For Retina */
@@ -2094,6 +2329,29 @@ button[disabled].button-primary
 only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min-device-pixel-ratio: 1.5) {
+
+    /* Icons */
+
+    .icon.minus {
+        background-image: url(../images/2/minus.png);
+    }
+    .icon.plus {
+        background-image: url(../images/2/plus.png);
+    }
+    .icon.facebook-smallest {
+        background-image: url(../images/2/facebook-smallest.png);
+    }
+    .icon.twitter-smallest {
+        background-image: url(../images/2/twitter-smallest.png);
+    }
+    .icon.close {
+        background-image: url(../images/2/close.png);
+    }
+    .icon.close.white {
+        background-image: url(../images/2/close-white.png);
+    }
+
+    /* Forms */
 
     input.ok,
     .input.ok {
@@ -2122,17 +2380,17 @@ only screen and (min-device-pixel-ratio: 1.5) {
     .start-buttons {
         background-image: url(../images/2/start-glow.png);
     }
-    .icon.facebook-smallest {
-        background-image: url(../images/2/facebook-smallest.png);
-    }
-    .icon.twitter-smallest {
-        background-image: url(../images/2/twitter-smallest.png);
-    }
     .loader.big {
         background-image: url(../images/2/loader-big.png);
     }
     .loader.small {
         background-image: url(../images/2/loader-small.png);
+    }
+    .sign-box-item.crowd img {
+        background-image: url(../images/2/join-crowd.png);
+    }
+    .sign-box-item.google img {
+        background-image: url(../images/2/join-gplus.png);
     }
     .refresher .circle {
         background-image: url(../images/2/refresher-big.png);
@@ -2151,9 +2409,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
     }
     .profile-image {
         background-image: url(../images/2/profile-image.png);
-    }
-    .uploader .close {
-        background-image: url(../images/2/close.png);
     }
 
     /* Main Menu */
