@@ -24,46 +24,46 @@
 					}, false);
 				});
 			})();
-			// Avatars Sample
-			(function(){
-				var els = document.querySelectorAll('.avatars-list .item');
-				Array.prototype.forEach.call(els, function(item, i){
-					var a = item.querySelector('.inner'),
-						img = item.querySelector('img');
-						
-					setTimeout(function(){
-						cm.addClass(a, 'loaded');
-						setTimeout(function(){
-							cm.addClass(img, 'loaded');
-						}, 100)
-					}, i * 100)
-				});
-			})();
-			// Toggle Menu Sample
-			(function(){
-				var button = cm.getByClass('menu-button')[0],
-					container = cm.getByClass('fixed-layout')[0],
-					handler = function(){
-						if(isOpen){
-							cm.removeClass(container, 'open');
-						}else{
-							cm.addClass(container, 'open');
-						}
-						isOpen = !isOpen;
-					},
-					isOpen = false;
-				cm.addEvent(button, 'mousedown', handler);
-				cm.addEvent(button, 'touchstart', handler);
-			})();
+            // Avatars Sample
+            (function(){
+                var els = document.querySelectorAll('.avatars-list .item');
+                Array.prototype.forEach.call(els, function(item, i){
+                    var a = item.querySelector('.inner'),
+                            img = item.querySelector('img');
+
+                    setTimeout(function(){
+                        cm.addClass(a, 'loaded');
+                        setTimeout(function(){
+                            cm.addClass(img, 'loaded');
+                        }, 100)
+                    }, i * 100)
+                });
+            })();
+            // Toggle Menu Sample
+            (function(){
+                var button = cm.getByClass('menu-button')[0],
+                        container = cm.getByClass('main-layout')[0],
+                        handler = function(){
+                            if(isOpen){
+                                cm.removeClass(container, 'open');
+                            }else{
+                                cm.addClass(container, 'open');
+                            }
+                            isOpen = !isOpen;
+                        },
+                        isOpen = false;
+                cm.addEvent(button, 'mousedown', handler);
+                cm.addEvent(button, 'touchstart', handler);
+            })();
 		});
 	</script>
 </head>
 
 <body>
 
-<div class="fixed-layout main-layout inner-scroll">
-		
-	<div class="left-side">
+<div class="main-layout">
+
+    <div class="sidebar left">
 		<div class="title">Menu</div>
 		<div class="user-box">
 			<div class="image">
@@ -72,81 +72,10 @@
 			<div class="name">Alice R.</div>
 			<div class="country">USA</div>
 		</div>
-		<a class="leftmenu-button signout" href="start.html">Sing out</a>
+		<a class="sidebar-button signout" href="start.html">Sing out</a>
 	</div>
-	
-	<div class="right-side">
-	
-		<div class="header">
-			<div class="inner">
-				<div class="menu-button" onTouchStart="">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-                <div class="main-menu">
-                    <ul>
-                        <li class="tab-chat">
-                            <div>
-                                <a href="chat.html">
-                                    <span class="image"></span>
-                                    <span class="text">Chat</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tab-invite">
-                            <div>
-                                <a href="invite.html">
-                                    <span class="image"></span>
-                                    <span class="text">Invite</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tab-crowd">
-                            <div>
-                                <a href="crowd.html">
-                                    <span class="image"></span>
-                                    <span class="text">Crowd</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tab-feed active">
-                            <div>
-                                <a href="feed.html">
-                                    <span class="image"></span>
-                                    <span class="text">Feed</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tab-post">
-                            <div>
-                                <a href="javascript:void(0);">
-                                    <span class="image"></span>
-                                    <span class="text">Post</span>
-                                </a>
-                                <ul>
-                                    <li class="add-gif">
-                                        <a href="javascript:void(0);">
-                                            <span class="image"></span>
-                                        </a>
-                                    </li>
-                                    <li class="add-photo">
-                                        <a href="javascript:void(0);">
-                                            <span class="image"></span>
-                                        </a>
-                                    </li>
-                                    <li class="add-text">
-                                        <a href="javascript:void(0);">
-                                            <span class="image"></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-			</div>
-		</div>
+
+    <div class="layout has-footer">
 		
 		<div class="content scroll">
 			<div class="refresher refreshing" style="height: 32px;">
@@ -359,6 +288,77 @@
 				</div>
 			</div>
 		</div>
+
+        <div class="footer has-menu">
+            <div class="inner">
+                <div class="menu-button" onTouchStart="">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li class="tab-chat">
+                            <div>
+                                <a href="chat.html">
+                                    <span class="image"></span>
+                                    <span class="text">Chat</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="tab-invite">
+                            <div>
+                                <a href="invite.html">
+                                    <span class="image"></span>
+                                    <span class="text">Invite</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="tab-crowd active">
+                            <div>
+                                <a href="crowd.html">
+                                    <span class="image"></span>
+                                    <span class="text">Crowd</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="tab-feed">
+                            <div>
+                                <a href="feed.html">
+                                    <span class="image"></span>
+                                    <span class="text">Feed</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="tab-post">
+                            <div>
+                                <a href="javascript:void(0);">
+                                    <span class="image"></span>
+                                    <span class="text">Post</span>
+                                </a>
+                                <ul>
+                                    <li class="add-gif">
+                                        <a href="javascript:void(0);">
+                                            <span class="image"></span>
+                                        </a>
+                                    </li>
+                                    <li class="add-photo">
+                                        <a href="javascript:void(0);">
+                                            <span class="image"></span>
+                                        </a>
+                                    </li>
+                                    <li class="add-text">
+                                        <a href="javascript:void(0);">
+                                            <span class="image"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 	
 	</div>
 </div>

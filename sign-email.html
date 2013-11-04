@@ -30,38 +30,32 @@
 
 <body>
 
-<div class="layout has-header">
-
-    <div class="header">
-        <a class="back-button" href="invite.html">
-            <span class="arrow-back"></span>
-        </a>
+<div class="layout has-header-big has-footer">
+    <div class="header service email">
+        <div class="image"></div>
         <div class="inner">
-            <h2>Invite with Email</h2>
+            <h2>Sign In in Crowdsurfing</h2>
         </div>
     </div>
-
+		
     <div class="content scroll">
         <form class="form" action="crowd.html">
-            <input type="text" placeholder="Name">
             <input type="email" placeholder="Email">
-            <textarea placeholder="Add a personal message"></textarea>
-            <div class="filter-line">
-                <div class="icon minus"></div>
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="filter-line">
-                <div class="icon plus"></div>
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="check-line">
-                <input type="checkbox" id="send-copy">
-                <label for="send-copy">Send me a copy of this message</label>
+            <input type="password" placeholder="Password">
+            <div class="forgot">
+                <a href="forgot.html">Forgot your details?</a>
             </div>
             <div class="submit-box">
-                <input type="submit" class="button-primary" value="Send">
+                <input type="submit" class="button-primary" value="Sign In">
             </div>
         </form>
+    </div>
+
+    <div class="footer">
+        <a class="back-button" href="sign.html">
+            <span class="arrow-back"></span>
+            <span class="inner">Back</span>
+        </a>
     </div>
 </div>
 

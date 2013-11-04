@@ -7,7 +7,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<title>Crowd Surfing</title>
 	
-	<link rel="stylesheet" href="styles/main.css?24">
+	<link rel="stylesheet" href="styles/main.css?42">
 	<script type="text/javascript" src="scripts/common.js"></script>
 	
 	<script type="text/javascript">
@@ -24,22 +24,22 @@
 					}, false);
 				});
 			})();
-			// Toggle Menu Sample
-			(function(){
-				var button = cm.getByClass('menu-button')[0],
-					container = cm.getByClass('main-layout')[0],
-					handler = function(){
-						if(isOpen){
-							cm.removeClass(container, 'open');
-						}else{
-							cm.addClass(container, 'open');
-						}
-						isOpen = !isOpen;
-					},
-					isOpen = false;
-				cm.addEvent(button, 'mousedown', handler);
-				cm.addEvent(button, 'touchstart', handler);
-			})();
+            // Toggle Menu Sample
+            (function(){
+                var button = cm.getByClass('menu-button')[0],
+                        container = cm.getByClass('main-layout')[0],
+                        handler = function(){
+                            if(isOpen){
+                                cm.removeClass(container, 'open');
+                            }else{
+                                cm.addClass(container, 'open');
+                            }
+                            isOpen = !isOpen;
+                        },
+                        isOpen = false;
+                cm.addEvent(button, 'mousedown', handler);
+                cm.addEvent(button, 'touchstart', handler);
+            })();
 		});
 	</script>
 </head>
@@ -49,65 +49,57 @@
 <div class="main-layout">
 
     <div class="sidebar left">
-		<div class="title">Menu</div>
-		<div class="user-box">
-			<div class="image">
-				<img src="images/samples/avatar-menu.jpg" alt="">
-			</div>
-			<div class="name">Alice R.</div>
-			<div class="country">USA</div>
-		</div>
-		<a class="sidebar-button signout" href="start.html">Sing out</a>
-	</div>
+        <div class="title">Menu</div>
+        <div class="user-box">
+            <div class="image">
+                <img src="images/samples/avatar-menu.jpg" alt="">
+            </div>
+            <div class="name">Alice R.</div>
+            <div class="country">USA</div>
+        </div>
+        <a class="sidebar-button signout" href="start.html">Sing out</a>
+    </div>
 
     <div class="layout has-footer">
-		
-		<div class="content scroll">
-			<div class="page-notes">
-                <div class="overlay-shadow"></div>
 
-            	<ul class="posts-list">
-                	<li>
-                    	<div class="post">
-                        	<div class="post-image">
-                            	<img src="images/samples/notes-image-preview.jpg" alt="">
-                            </div>
-                            <div class="post-text">Here are couple photos from my concert.</div>
-                            <div class="user-box clear">
-                                <div class="image">
-                                    <img src="images/samples/avatar-notes.jpg" alt="">
-                                </div>
-                                <div class="name">Bob C.</div>
-                                <div class="time">1 hour ago</div>
-                            </div>
-                        </div>
+        <div class="content scroll">
+            <div class="page-chat-start">
+                <a class="button button-primary" href="chat-private.html">New Private Chat</a>
+
+                <ul class="chat-rooms">
+                    <li>
+                        <a href="chat-open.html"><span class="icon open-chat"></span>Open Chat</a>
                     </li>
                     <li>
-                    	<div class="post">
-                            <div class="post-text">Italian wine is wine produced in Italy, a country which is home to some of the oldest wine-producing...</div>
-                            <div class="user-box clear">
-                                <div class="image">
-                                    <img src="images/samples/avatar-notes.jpg" alt="">
-                                </div>
-                                <div class="name">Bob C.</div>
-                                <div class="time">1 hour ago</div>
-                            </div>
-                        </div>
+                        <a href="chat-room.html">
+                            <span class="text">Mike Wisternoff</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat-room.html">
+                            <span class="text">Tony McGuinness</span>
+                            <span class="counter">+99</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat-room.html">
+                            <span class="text">Lucky Group</span>
+                        </a>
                     </li>
                 </ul>
             </div>
-		</div>
+        </div>
 
         <div class="footer has-menu">
             <div class="inner">
-                <div class="menu-button">
+                <div class="menu-button" data-rv-event="touchend:signin(fb)">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <div class="main-menu">
                     <ul>
-                        <li class="tab-chat">
+                        <li class="tab-chat active">
                             <div>
                                 <a href="chat.html">
                                     <span class="image"></span>
@@ -131,7 +123,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="tab-feed active">
+                        <li class="tab-feed">
                             <div>
                                 <a href="feed.html">
                                     <span class="image"></span>
@@ -168,15 +160,8 @@
                 </div>
             </div>
         </div>
-	
-	</div>
-</div>
-
-<div class="notification fadein">
-    <div class="icon close white"></div>
-    <div class="text">
-        <div class="inner">Sesame snaps cotton candy dessert apple pie candy marshmallow oat toffee cake.</div>
     </div>
+
 </div>
 
 </body>

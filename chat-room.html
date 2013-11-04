@@ -7,7 +7,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<title>Crowd Surfing</title>
 	
-	<link rel="stylesheet" href="styles/main.css?42">
+	<link rel="stylesheet" href="styles/main.css?44">
 	<script type="text/javascript" src="scripts/common.js"></script>
 	
 	<script type="text/javascript">
@@ -60,51 +60,71 @@
         <a class="sidebar-button signout" href="start.html">Sing out</a>
     </div>
 
-    <div class="layout has-header-big has-footer">
+    <div class="layout has-header has-footer">
+
         <div class="header">
+            <a class="back-button" href="chat.html">
+                <span class="arrow-back"></span>
+            </a>
             <div class="inner">
-                <h2>It’s more fun with friends!</h2>
-                <h3>Invite your friends to join you in<br>Crowdsurfing watching the Killers</h3>
+                <h2>Room 1</h2>
             </div>
         </div>
 
         <div class="content">
-            <div class="service-boxes">
-                <a class="service-box-item facebook" href="invite-facebook.html">
-                    <span class="inner">
-                        <img src="images/service-resizer.png" alt="">
-                        <span class="small"><span>with</span></span>
-                        <span class="big"><span>Facebook</span></span>
-                    </span>
-                </a>
-                <a class="service-box-item twitter" href="invite-twitter.html">
-                    <span class="inner">
-                        <img src="images/service-resizer.png" alt="">
-                        <span class="small"><span>with</span></span>
-                        <span class="big"><span>Twitter</span></span>
-                    </span>
-                </a>
-                <a class="service-box-item crowd" href="invite-crowd.html">
-                    <span class="inner">
-                        <img src="images/service-resizer.png" alt="">
-                        <span class="small"><span>with</span></span>
-                        <span class="big"><span>CrowdSurfing</span></span>
-                    </span>
-                </a>
-                <a class="service-box-item google" href="invite-google.html">
-                    <span class="inner">
-                        <img src="images/service-resizer.png" alt="">
-                        <span class="small"><span>with</span></span>
-                        <span class="big"><span>Google+</span></span>
-                    </span>
-                </a>
-                <a class="service-box-item email" href="invite-email.html">
-                    <span class="inner">
-                        <img src="images/service-resizer.png" alt="">
-                        <span class="small"><span>with</span></span>
-                        <span class="big"><span>Email</span></span>
-                    </span>
-                </a>
+            <div class="page-chat-room">
+                <div class="listing scroll">
+                    <ul class="chat-listing">
+                        <li class="companion clear">
+                            <div class="l">
+                                <img src="images/samples/avatar-menu.jpg" alt="Avatar">
+                            </div>
+                            <div class="r">
+                                <div class="text">Have something interesting orwitty to say?</div>
+                                <div class="date">12:01 AM</div>
+                            </div>
+                        </li>
+                        <li class="me clear">
+                            <div class="r">
+                                <div class="text">Malt extract oxidized lauter abv, cask conit primary fermentation</div>
+                                <div class="date">12:01 AM</div>
+                            </div>
+                        </li>
+                        <li class="companion clear">
+                            <div class="l">
+                                <img src="images/samples/avatar-notes.jpg" alt="Avatar">
+                            </div>
+                            <div class="r">
+                                <div class="text">Imperial, coper noble hops. condition hops, double bock/dopplebock aduct chocolate malt squares. aerobic ner weisse barrel</div>
+                                <div class="date">12:01 AM</div>
+                            </div>
+                        </li>
+                        <li class="companion clear">
+                            <div class="l">
+                                <img src="images/samples/avatar-notes.jpg" alt="Avatar">
+                            </div>
+                            <div class="r">
+                                <div class="text">Imperial, coper noble hops. condition hops, double bock/dopplebock aduct chocolate malt squares. aerobic ner weisse barrel</div>
+                                <div class="date">12:01 AM</div>
+                            </div>
+                        </li>
+                        <li class="me clear">
+                            <div class="r">
+                                <div class="text">Malt extract oxidized lauter abv, cask conit primary fermentation</div>
+                                <div class="date">12:01 AM</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="writer">
+                    <div class="icons">
+                        <div class="icon writer-facebook"></div>
+                        <div class="icon writer-twitter active"></div>
+                    </div>
+                    <textarea placeholder="Type message"></textarea>
+                    <input type="button" class="button button-primary" value="Post">
+                </div>
             </div>
         </div>
 
@@ -117,7 +137,7 @@
                 </div>
                 <div class="main-menu">
                     <ul>
-                        <li class="tab-chat">
+                        <li class="tab-chat active">
                             <div>
                                 <a href="chat.html">
                                     <span class="image"></span>
@@ -125,7 +145,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="tab-invite active">
+                        <li class="tab-invite">
                             <div>
                                 <a href="invite.html">
                                     <span class="image"></span>

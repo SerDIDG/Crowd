@@ -30,45 +30,47 @@
 
 <body>
 
-<div class="sign-layout scroll">
-	<div class="inner">
-		<div class="header-big">Sign in</div>
-		
-		<div class="content">
-			<a class="sign-join-item facebook" href="#">
-				<img src="images/join-resizer.png" alt="">
-				<span class="small"><span>with</span></span>
-				<span class="big"><span>Facebook</span></span>
-			</a>
-			<a class="sign-join-item twitter" href="#">
-				<img src="images/join-resizer.png" alt="">
-				<span class="small"><span>with</span></span>
-				<span class="big"><span>Twitter</span></span>
-			</a>
-			<div class="sign-join-item email-join">
-				<img src="images/join-resizer.png" alt="">
-			</div>
-		</div>
-	</div>
-	
-	<div class="footer">
-		<div class="or">or</div>
-		<div class="sign-box">
-			<form action="crowd.html">
-				<input type="email" placeholder="Email">
-				<input type="password" placeholder="Password">
-				<div class="forgot">
-					<a href="forgot.html">Forgot your details?</a>
-				</div>
-				<div class="submit-box">
-					<input type="submit" class="button-primary" value="Sign in">
-				</div>
-			</form>
-		</div>
-		<div class="bottom-panel">
-			<a class="back-button" href="start.html"><span class="arrow-back"></span>Back</a>
-		</div>
-	</div>
+<div class="layout has-header-big has-footer">
+    <div class="header">
+        <div class="inner">
+            <h1>Sign In in CrowdSurfing</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="service-boxes">
+            <a class="service-box-item facebook" href="crowd.html" data-rv-event="touchend:signin(fb)">
+                <span class="inner">
+                    <img src="images/service-resizer.png" alt="">
+                    <span class="small"><span>with</span></span>
+                    <span class="big"><span>Facebook</span></span>
+                </span>
+            </a>
+            <a class="service-box-item twitter" href="crows.html" data-rv-event="touchend:signin(twitter)">
+                <span class="inner">
+                    <img src="images/service-resizer.png" alt="">
+                    <span class="small"><span>with</span></span>
+                    <span class="big"><span>Twitter</span></span>
+                </span>
+            </a>
+            <a class="service-box-item email" href="sign-email.html">
+                <span class="inner">
+                    <img src="images/service-resizer.png" alt="">
+                    <span class="small"><span>with</span></span>
+                    <span class="big"><span>Email</span></span>
+                </span>
+            </a>
+            <div class="service-box-item empty"></div>
+            <div class="service-box-item empty"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a class="back-button" href="start.html">
+            <span class="arrow-back"></span>
+            <span class="inner">Back</span>
+        </a>
+    </div>
 </div>
 
 <div class="dialog-container fadein">
