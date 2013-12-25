@@ -1549,9 +1549,6 @@ button[disabled].button-primary
 .layout.has-footer-button .content {
     bottom: 92px;
 }
-.layout.is-start.has-footer .content {
-    bottom: 40px;
-}
 
 .centering {
     width: 100%;
@@ -1597,10 +1594,6 @@ button[disabled].button-primary
 .footer.has-menu > .inner {
     left: 0;
     right: 0;
-}
-
-.layout.is-start .footer {
-    min-height: 40px;
 }
 
 /* ******* MAIN LAYOUT ****** */
@@ -2459,7 +2452,7 @@ button[disabled].button-primary
 .slider .logo.big {
     width: 235px;
     height: 120px;
-    top: 100px;
+    bottom: 47%;
     background-image: url(../images/slider/logo-big.png);
 }
 .slider .logo.small {
@@ -2473,12 +2466,13 @@ button[disabled].button-primary
     position: absolute;
     z-index: 2;
     right: 0;
-    bottom: 64px;
+    bottom: 20.35%;
     left: 0;
     text-align: center;
     color: #ffffff;
 }
 .slider .text h1 {
+    margin: 0;
     line-height: 28px;
     font-weight: bold;
     font-size: 24px;
@@ -2487,14 +2481,14 @@ button[disabled].button-primary
 .slider .text p {
     margin: 14px 0 0 0;
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    line-height: 19px;
+    line-height: 18px;
     font-size: 16px;
     color: inherit;
 }
 .slider .icon {
     width: 105px;
     height: 75px;
-    bottom: 185px;
+    bottom: 44.5%;
 }
 .slider .start-search {
     background-image: url(../images/slider/search.png);
@@ -2515,7 +2509,7 @@ button[disabled].button-primary
     margin: 0;
     position: absolute;
     left: 0;
-    bottom: 35px;
+    bottom: 14.8%;
     z-index: 5;
     overflow: hidden;
     text-align: center;
@@ -2564,7 +2558,7 @@ button[disabled].button-primary
     background: #4c80c2;
     text-decoration: none;
     text-align: center;
-    line-height: 40px;
+    line-height: 41px;
     font-size: 18px;
     color: #ffffff;
 }
