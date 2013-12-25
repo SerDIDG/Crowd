@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>Crowd Surfing</title>
+	
+	<link rel="stylesheet" href="styles/main.css">
+	<script type="text/javascript" src="scripts/common.js"></script>
+    <script type="text/javascript" src="scripts/useragent.js"></script>
+    <script type="text/javascript" src="scripts/slider.js"></script>
+	
+	<script type="text/javascript">
+		cm.onload(function(){
+			// Disable main scroll
+			(function(){
+				document.body.addEventListener('touchmove', function(e){
+					e.preventDefault();
+				}, false);
+				var els = document.querySelectorAll('.scroll');
+				Array.prototype.forEach.call(els, function(item){
+					item.addEventListener('touchmove', function(e){
+						e.stopPropagation();
+					}, false);
+				});
+			})();
+            // Slider
+            new Com.Slider({
+                'node' : cm.getEl('slider'),
+                'arrows' : false,
+                'buttons' : true,
+                'pauseOnHover' : false,
+                'delay' : 5000,
+                'time' : 1000
+            });
+		});
+	</script>
+</head>
+
+<body>
+
+<div class="layout is-start has-footer">
+	
+	<div class="content">
+        <div class="page-start">
+            <div class="slider" id="slider">
+                <ul class="slides">
+                    <li>
+                        <div class="image">
+                            <img src="images/slider/1.jpg" alt="Slide 1">
+                        </div>
+                        <div class="logo big"></div>
+                        <div class="text">
+                            <p>Sign up to join the crowd and start<br>sharing the experience with your<br>friends and other fans!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="images/slider/2.jpg" alt="Slide 2">
+                        </div>
+                        <div class="logo small"></div>
+                        <div class="icon start-search"></div>
+                        <div class="text">
+                            <h1>Search</h1>
+                            <p>Search the crowd for your friends who<br>are at the show and online. Or search<br>for fans that share your interests!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="images/slider/3.jpg" alt="Slide 3">
+                        </div>
+                        <div class="logo small"></div>
+                        <div class="icon start-chat"></div>
+                        <div class="text">
+                            <h1>Chat</h1>
+                            <p>Join the public chat or just watch the<br>commentary to see how the crowd is<br>reacting live!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="images/slider/4.jpg" alt="Slide 4">
+                        </div>
+                        <div class="logo small"></div>
+                        <div class="icon start-pm"></div>
+                        <div class="text">
+                            <h1>Private Message</h1>
+                            <p>Start private messages with your friends<br>or group messages with people you<br>meet in CrowdSurfing!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="images/slider/5.jpg" alt="Slide 5">
+                        </div>
+                        <div class="logo small"></div>
+                        <div class="icon start-invite"></div>
+                        <div class="text">
+                            <h1>Invite</h1>
+                            <p>Invite friends from your favorite networks<br>so they can join you in the crowd! The<br>best part? We tell you when they arrive!</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+
+    <div class="footer">
+        <div class="modern-menu">
+            <ul>
+                <li>
+                    <a href="sign.html">Sign In</a>
+                </li>
+                <li>
+                    <a href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+		
+</div>
+
+</body>
+</html>
