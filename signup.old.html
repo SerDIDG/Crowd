@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>Crowd Surfing</title>
+	
+	<link rel="stylesheet" href="styles/main.css?3">
+	<script type="text/javascript" src="scripts/common.js"></script>
+	
+	<script type="text/javascript">
+		cm.onload(function(){
+			// Disable main scroll
+			(function(){
+				document.body.addEventListener('touchmove', function(e){
+					e.preventDefault();
+				}, false);
+				var els = document.querySelectorAll('.scroll');
+				Array.prototype.forEach.call(els, function(item){
+					item.addEventListener('touchmove', function(e){
+						e.stopPropagation();
+					}, false);
+				});
+			})();
+		});
+	</script>
+</head>
+
+<body>
+
+<div class="layout has-header-big has-footer">
+    <div class="header">
+        <div class="inner">
+            <h1>Join the Crowd!</h1>
+        </div>
+    </div>
+	
+	<div class="content">
+        <div class="service-boxes">
+            <a class="service-box-item facebook" href="signup-facebook.html">
+                <span class="inner">
+                    <img src="images/service-resizer.png" alt="">
+                    <span class="small"><span>with</span></span>
+                    <span class="big"><span>Facebook</span></span>
+                </span>
+            </a>
+            <a class="service-box-item twitter" href="signup-twitter.html">
+                <span class="inner">
+                    <img src="images/service-resizer.png" alt="">
+                    <span class="small"><span>with</span></span>
+                    <span class="big"><span>Twitter</span></span>
+                </span>
+            </a>
+            <a class="service-box-item email" href="signup-email.html">
+                <span class="inner">
+                    <img src="images/service-resizer.png" alt="">
+                    <span class="small"><span>with</span></span>
+                    <span class="big"><span>Email</span></span>
+                </span>
+            </a>
+            <div class="service-box-item empty"></div>
+            <div class="service-box-item empty"></div>
+        </div>
+	</div>
+
+    <div class="footer">
+        <a class="back-button" href="start.html">
+            <span class="arrow-back"></span>
+            <span class="inner">Back</span>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
