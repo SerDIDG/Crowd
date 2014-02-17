@@ -12,37 +12,37 @@
 	
 	<script type="text/javascript">
 		cm.onload(function(){
-            // Avatars Sample
-            (function(){
-                var els = document.querySelectorAll('.avatars-list .item');
-                Array.prototype.forEach.call(els, function(item, i){
-                    var a = item.querySelector('.inner'),
-                            img = item.querySelector('img');
-
-                    setTimeout(function(){
-                        cm.addClass(a, 'loaded');
-                        setTimeout(function(){
-                            cm.addClass(img, 'loaded');
-                        }, 100)
-                    }, i * 100)
-                });
-            })();
-            // Toggle Menu Sample
-            (function(){
-                var button = cm.getByClass('menu-button')[0],
-                        container = cm.getByClass('main-layout')[0],
-                        handler = function(){
-                            if(isOpen){
-                                cm.removeClass(container, 'open');
-                            }else{
-                                cm.addClass(container, 'open');
-                            }
-                            isOpen = !isOpen;
-                        },
-                        isOpen = false;
-                cm.addEvent(button, 'mousedown', handler);
-                cm.addEvent(button, 'touchstart', handler);
-            })();
+			// Avatars Sample
+			(function(){
+				var els = document.querySelectorAll('.avatars-list .item');
+				Array.prototype.forEach.call(els, function(item, i){
+					var a = item.querySelector('.inner'),
+						img = item.querySelector('img');
+						
+					setTimeout(function(){
+						cm.addClass(a, 'loaded');
+						setTimeout(function(){
+							cm.addClass(img, 'loaded');
+						}, 100)
+					}, i * 100)
+				});
+			})();
+			// Toggle Menu Sample
+			(function(){
+				var button = cm.getByClass('menu-button')[0],
+					container = cm.getByClass('main-layout')[0],
+					handler = function(){
+						if(isOpen){
+							cm.removeClass(container, 'open');
+						}else{
+							cm.addClass(container, 'open');
+						}
+						isOpen = !isOpen;
+					},
+					isOpen = false;
+				cm.addEvent(button, 'mousedown', handler);
+				cm.addEvent(button, 'touchstart', handler);
+			})();
 			// Refresher
 			(function(){
 				var refresher = document.querySelector('.refresher'),
@@ -114,8 +114,8 @@
 		</div>
 		<a class="sidebar-button signout" href="start.html">Sing out</a>
 	</div>
-
-    <div class="layout has-header has-footer">
+	
+	<div class="layout has-header has-footer">
 
         <div class="header">
             <div class="dir-left">
@@ -129,7 +129,7 @@
             <div class="inner">
                 <div class="logo-inline-centered"></div>
 
-                <div class="search-toolbar">
+                <div class="search-toolbar fadein">
                     <div class="field has-icon has-icon-both">
                         <div class="icon search-gray"></div>
                         <input type="text" placeholder="Search" class="input">
@@ -139,31 +139,22 @@
             </div>
 
             <div class="dir-right">
-                <div class="icon search"></div>
+                <div class="icon close"></div>
             </div>
         </div>
-		
+
 		<div class="content scroll">
-            <div class="refresher">
-                <div class="circle"></div>
-                <div class="bottom">
-                    <div class="loader small"></div>
-                    <div class="text">refreshed 15 min ago</div>
-                </div>
-            </div>
+			<div class="refresher">
+				<div class="circle"></div>
+				<div class="bottom">
+					<div class="loader small"></div>
+					<div class="text">refreshed 15 min ago</div>
+				</div>
+			</div>
 			
 			<div class="page-crowd">
 				<div class="overlay-shadow"></div>
 				
-				<div class="user-box preview fadein" style="top: 49px; left: 4px;">
-					<div class="image">
-						<img src="images/samples/avatar-crowd-big.jpg" alt="">
-						<div class="location-mark"></div>
-					</div>
-					<div class="name">Alice R.</div>
-					<div class="country">USA</div>
-				</div>
-
 				<div class="avatars-list">
                 
                 	<div class="row clear">

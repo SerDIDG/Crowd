@@ -7,24 +7,27 @@
 
 * {
     line-height: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: HelveticaNeue, helvetica, arial, sans-serif;
     font-size: 15px;
     color: #b3b3b3;
     outline: none;
     -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+       -moz-user-select: none;
+            user-select: none;
 }
+
 .accelerate * {
-    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
 }
+
 html {
     width: 100%;
     height: 100%;
     -webkit-text-size-adjust: none;
 }
+
 body {
     width: 100%;
     height: 100%;
@@ -37,41 +40,50 @@ body {
     overflow: hidden;
     background: #0f0f0f;
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 input, textarea {
     -webkit-user-select: text;
-    -moz-user-select: text;
-    user-select: text;
+       -moz-user-select: text;
+            user-select: text;
 }
+
 a {
     color: #1974bc;
     text-decoration: none;
 }
+
 img {
     width: 100%;
     height: auto;
     border: none;
 }
+
 h1, h2, h3, h4, p {
     margin: 0 0 20px;
     padding: 0;
     font-weight: normal;
 }
+
 h1 {
     line-height: 48px;
     font-size: 26px;
 }
+
 h2 {
     line-height: 33px;
     font-size: 18px;
     color: #fff;
 }
+
 h3 {
     line-height: 18px;
     font-size: 15px;
 }
+
 h4 {
     margin: 0;
     font-weight: bold;
@@ -79,79 +91,135 @@ h4 {
 
 /* ******* ICONS ******* */
 
+.icon.linked {
+    cursor: pointer;
+}
+
 .icon.minus {
     width: 34px;
     height: 41px;
     background: url(../images/1/minus.png);
     background-size: contain;
 }
+
 .icon.plus {
     width: 34px;
     height: 41px;
     background: url(../images/1/plus.png);
     background-size: contain;
 }
+
 .icon.close {
-    width: 33px;
-    height: 33px;
-    background: url(../images/1/close.png);
-    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/close.png) center center no-repeat;
+    background-size: 20px 20px;
 }
 .icon.close.white {
-    background-image: url(../images/1/close-white.png);
+    width: 33px;
+    height: 33px;
+    background-image: url(../images/2/close-white.png);
+    background-size: 33px 33px;
 }
+
 .icon.open-chat {
     background-image: url(../images/1/open-chat.png);
 }
+
 .icon.chat-room {
     background-image: url(../images/1/chat-room.png);
 }
+
 .icon.writer-facebook {
-     width: 18px;
-     height: 18px;
-     background-image: url(../images/1/writer-facebook.png);
-     background-size: contain;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/1/writer-facebook.png);
+    background-size: contain;
 }
+
 .icon.writer-facebook:active,
 .icon.writer-facebook.active {
     background-image: url(../images/1/writer-facebook-a.png);
 }
+
 .icon.writer-twitter {
     width: 20px;
     height: 18px;
     background-image: url(../images/1/writer-twitter.png);
     background-size: contain;
 }
+
 .icon.writer-twitter:active,
 .icon.writer-twitter.active {
     background-image: url(../images/1/writer-twitter-a.png);
 }
+
 .icon.button-facebook,
 .icon.button-twitter {
     width: 44px;
     height: 44px;
     background-size: contain;
 }
+
 .icon.button-facebook {
     background-image: url(../images/icons/button-facebook.png);
 }
+
 .icon.button-twitter {
     background-image: url(../images/icons/button-twitter.png);
 }
+
 .icon.input-email {
     background-image: url(../images/icons/input-email.png);
+    background-size: contain;
 }
+
 .icon.input-password {
     background-image: url(../images/icons/input-password.png);
+    background-size: contain;
 }
+
 .icon.input-user {
     background-image: url(../images/icons/input-user.png);
+    background-size: contain;
 }
+
 .icon.input-calendar {
     background-image: url(../images/icons/input-calendar.png);
+    background-size: contain;
 }
+
 .icon.input-gender {
     background-image: url(../images/icons/input-gender.png);
+    background-size: contain;
+}
+
+.icon.search {
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/search.png) center center no-repeat;
+    background-size: 20px 20px;
+}
+
+.icon.search-gray {
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/search-gray.png) center center no-repeat;
+    background-size: 20px 20px;
+}
+
+.icon.advanced-search {
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/advanced-search.png) center center no-repeat;
+    background-size: 20px 20px;
+}
+
+.icon.search-big {
+    width: 40px;
+    height: 40px;
+    background: url(../images/1/search-big.png) 0 0 no-repeat;
+    background-size: 100% 100%;
 }
 
 /* ******* STATIC CLASSES ******* */
@@ -164,19 +232,22 @@ h4 {
     line-height: 0;
     height: 0;
 }
+
 .scroll {
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
+
 .full-scroll {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
 }
+
 .selectable {
     -webkit-user-select: text;
-    -moz-user-select: text;
-    user-select: text;
+       -moz-user-select: text;
+            user-select: text;
 }
 
 /* ******* FORMS ******* */
@@ -218,9 +289,10 @@ input[type="number"],
 input[type="file"] {
     opacity: 0;
 }
+
 .positioning {
-    position:absolute;
-    width:90%;
+    position: absolute;
+    width: 90%;
     text-align: center;
     line-height: 42px;
     font-size: 24px;
@@ -233,14 +305,17 @@ input::-webkit-input-placeholder {
     color: #999999;
     opacity: 1;
 }
+
 input:-moz-placeholder {
     color: #999999;
     opacity: 1;
 }
+
 input::-moz-placeholder {
     color: #999999;
     opacity: 1;
 }
+
 input:-ms-input-placeholder {
     color: #999999;
     opacity: 1;
@@ -251,10 +326,12 @@ input.error,
     color: #d21a2b;
     border-color: #d21a2b;
 }
+
 input.ok,
 .input.ok {
     background-image: url(../images/1/input-validate.png);
 }
+
 input.search,
 .input.search {
     padding-right: 40px;
@@ -273,8 +350,8 @@ textarea {
     padding: 10px;
     resize: vertical;
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     background: #2b2b2b none 100% 0 no-repeat;
     background-size: 30px 40px;
     border: none;
@@ -291,14 +368,17 @@ textarea::-webkit-input-placeholder {
     color: #999999;
     opacity: 1;
 }
+
 textarea:-moz-placeholder {
     color: #999999;
     opacity: 1;
 }
+
 textarea::-moz-placeholder {
     color: #999999;
     opacity: 1;
 }
+
 textarea:-ms-input-placeholder {
     color: #999999;
     opacity: 1;
@@ -338,46 +418,80 @@ input[type="reset"],
 button,
 .button {
     width: 100%;
-    height: 42px;
+    height: 44px;
     display: block;
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
     background: #333639;
-    background: -webkit-linear-gradient(top, #57585b 0%, #333639 100%);
-    background:         linear-gradient(to bottom, #57585b 0%, #333639 100%);
     border: none;
-    border-radius: 0;
+    border-radius: 3px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: center;
-    line-height: 42px;
-    font-size: 24px;
+    line-height: 44px;
+    font-weight: 500;
+    font-size: 19px;
     color: #fff;
     cursor: pointer;
 }
+
 input.button-primary,
 button.button-primary,
 .button-primary {
-    background: #1873ba;
-    background: -webkit-linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
-    background:         linear-gradient(to bottom, #1b8ce5 0%, #1873ba 100%);
+    background: #4b80c2;
 }
+
 input[disabled].button-primary,
 button[disabled].button-primary
 .disabled.button-primary {
     opacity: 0.5;
     cursor: default;
 }
+
+input.button-facebook,
+button.button-facebook,
+.button.button-facebook {
+    background: #3b599a;
+}
+
+input.button-twitter,
+button.button-twitter,
+.button.button-twitter {
+    background: #5fa8dd;
+}
+
 .submit-box {
     padding: 0 22px;
 }
 
-.icon.search-big {
-    width: 40px;
-    height: 40px;
-    background: url(../images/1/search-big.png) 0 0 no-repeat;
-    background-size: 100% 100%;
+button.has-icon,
+.button.has-icon {
+    padding: 0 0 0 60px;
+    position: relative;
+    text-align: left;
+}
+
+button.has-icon .icon,
+.button.has-icon .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.buttons input,
+.buttons button,
+.buttons .button {
+    margin: 16px 0 0 0;
+}
+
+.buttons input:first-child,
+.buttons button:first-child,
+.buttons .button:first-child {
+    margin: 0;
 }
 
 /* Fieldset */
@@ -388,47 +502,66 @@ fieldset {
     background: #fff;
     border: none;
     border-radius: 3px;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.2) inset;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset;
 }
-fieldset .input,
-fieldset .select,
-fieldset .select {
-    margin: 0;
-    background: none;
-    border: none;
-    font-weight: normal;
-    color: #7d7b7b;
-}
-fieldset .input::-webkit-input-placeholder {
-    opacity: 1;
-    color: #7d7b7b;
-}
-fieldset .input::-moz-placeholder {
-    opacity: 1;
-    color: #7d7b7b;
-}
-fieldset .input:-ms-input-placeholder {
-    opacity: 1;
-    color: #7d7b7b;
-}
-fieldset .field {
+
+.field {
     position: relative;
     border-top: 1px solid #e0e0e0;
 }
-fieldset .field :first-child {
+
+.field:first-child {
     border-top: none;
 }
-fieldset .field.has-icon .input,
-fieldset .field.has-icon .select {
+
+.field .input,
+.field .textarea,
+.field .select {
+    margin: 0;
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+    font-weight: normal;
+    color: #7d7b7b;
+}
+
+.field .input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #7d7b7b;
+}
+
+.field .input::-moz-placeholder {
+    opacity: 1;
+    color: #7d7b7b;
+}
+
+.field .input:-ms-input-placeholder {
+    opacity: 1;
+    color: #7d7b7b;
+}
+
+.field.has-icon .input,
+.field.has-icon .select {
     padding-left: 29px;
 }
-fieldset .field.has-icon > .icon {
+.field.has-icon-both .input,
+.field.has-icon-both .select {
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+.field.has-both-icon > .icon,
+.field.has-icon > .icon {
     width: 29px;
-    height: 41px;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-size: contain;
+}
+.field.has-both-icon > .icon:last-child,
+.field.has-icon > .icon:last-child {
+    right: 0;
+    left: auto;
 }
 
 /* Filter Line */
@@ -438,12 +571,14 @@ fieldset .field.has-icon > .icon {
     margin: 0 0 6px;
     position: relative;
 }
+
 .filter-line .icon {
     position: absolute;
     top: 0;
     right: 0;
     cursor: pointer;
 }
+
 .filter-line input,
 .filter-line textarea,
 .filter-line select {
@@ -455,9 +590,11 @@ fieldset .field.has-icon > .icon {
 .check-line {
     margin: 0 0 6px;
 }
+
 .check-line input {
     display: none;
 }
+
 .check-line label {
     display: block;
     position: relative;
@@ -466,6 +603,7 @@ fieldset .field.has-icon > .icon {
     font-size: 15px;
     color: #989898;
 }
+
 .check-line label:before {
     width: 23px;
     height: 23px;
@@ -477,13 +615,15 @@ fieldset .field.has-icon > .icon {
     background: #2b2b2b;
     border-bottom: 1px solid #4a4a4a;
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .check-line input:checked + label:before {
     background-image: url(../images/1/checkbox-a.png);
     background-size: 23px 23px;
 }
+
 .check-line input[type="radio"]:checked + label:before {
     background-image: url(../images/1/radio-a.png);
 }
@@ -492,6 +632,7 @@ fieldset .field.has-icon > .icon {
     padding-right: 40px;
     padding-left: 0;
 }
+
 .check-line.in-right label:before {
     right: 8px;
     left: auto;
@@ -502,22 +643,27 @@ fieldset .field.has-icon > .icon {
 .cols {
     margin: 0 -4px 6px;
 }
+
 .cols > .col {
     float: left;
     padding: 0 4px;
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .cols.two > .col {
     width: 50%;
 }
+
 .cols.three > .col {
     width: 33.33%;
 }
-.cols.three > .col:nth-of-type(2){
+
+.cols.three > .col:nth-of-type(2) {
     width: 33.34%;
 }
+
 .cols input {
     margin: 0;
 }
@@ -536,6 +682,7 @@ fieldset .field.has-icon > .icon {
     position: relative;
     padding: 15px;
 }
+
 .date-selects-custom:before {
     height: 1px;
     content: ' ';
@@ -547,6 +694,7 @@ fieldset .field.has-icon > .icon {
     overflow: hidden;
     background: #197fce;
 }
+
 .date-selects-custom ul {
     height: 100%;
     margin: 0;
@@ -558,17 +706,21 @@ fieldset .field.has-icon > .icon {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.date-selects-custom ul:nth-of-type(1){
+
+.date-selects-custom ul:nth-of-type(1) {
     width: 50%;
 }
-.date-selects-custom ul:nth-of-type(2){
+
+.date-selects-custom ul:nth-of-type(2) {
     width: 25%;
 }
-.date-selects-custom ul:nth-of-type(3){
+
+.date-selects-custom ul:nth-of-type(3) {
     width: 25%;
     padding: 0 9px 0 0;
     text-align: right;
 }
+
 .date-selects-custom ul li {
     height: 50px;
     overflow: hidden;
@@ -578,12 +730,15 @@ fieldset .field.has-icon > .icon {
     font-size: 20px;
     color: #757575;
 }
+
 .date-selects-custom ul li:first-child {
     padding: 50px 0 0 0;
 }
+
 .date-selects-custom ul li:last-child {
     padding: 0 0 50px 0;
 }
+
 .date-selects-custom ul li.active {
     color: #ffffff;
 }
@@ -596,13 +751,16 @@ fieldset .field.has-icon > .icon {
     border-bottom: 1px solid #4a4a4a;
     margin: 0 0 6px;
 }
+
 .gender-input input {
     display: none;
 }
+
 .gender-input label {
     width: 50%;
     float: left;
 }
+
 .gender-input span {
     height: 40px;
     display: block;
@@ -613,6 +771,7 @@ fieldset .field.has-icon > .icon {
     font-weight: bold;
     color: #999999;
 }
+
 .gender-input input:checked + label span {
     background: #535353;
     color: #fff;
@@ -627,6 +786,7 @@ fieldset .field.has-icon > .icon {
     font-size: 14px;
     color: #1974bc;
 }
+
 .forgot a {
     color: #1974bc;
     text-decoration: none;
@@ -642,17 +802,20 @@ fieldset .field.has-icon > .icon {
     list-style: none;
     font-size: 0;
 }
+
 .avatars-list .row {
     font-size: 0;
 }
+
 .avatars-list .item {
     width: 25%;
     float: left;
     padding: 2px;
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .avatars-list .item .inner {
     height: 0;
     display: block;
@@ -662,11 +825,13 @@ fieldset .field.has-icon > .icon {
     opacity: 0;
     background: #000;
     -webkit-transition: opacity 0.2s linear;
-            transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
 }
+
 .avatars-list .item .inner.loaded {
     opacity: 1;
 }
+
 .avatars-list .item img {
     width: 100%;
     height: 100%;
@@ -674,16 +839,18 @@ fieldset .field.has-icon > .icon {
     position: absolute;
     z-index: -1;
     -webkit-transform: scaleY(0);
-        -ms-transform: scaleY(0);
-            transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
     -webkit-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
+
 .avatars-list .item img.loaded {
     -webkit-transform: scaleY(1);
-        -ms-transform: scaleY(1);
-            transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
 }
+
 .avatars-list .item .inner-simple img {
     width: 100%;
     height: 100%;
@@ -691,6 +858,7 @@ fieldset .field.has-icon > .icon {
     position: absolute;
     visibility: hidden;
 }
+
 .avatars-list .item .inner-simple img.loaded {
     visibility: visible;
 }
@@ -699,20 +867,23 @@ fieldset .field.has-icon > .icon {
 
 .user-box {
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0 10px 14px;
     border-bottom: 1px solid #272728;
 }
+
 .user-box .image {
     width: 38px;
     height: 38px;
     float: left;
     margin: 0 10px 0 0;
 }
+
 .user-box .image img {
     display: block;
 }
+
 .user-box .name,
 .user-box .country,
 .user-box .time {
@@ -723,6 +894,7 @@ fieldset .field.has-icon > .icon {
     font-size: 18px;
     color: #ffffff;
 }
+
 .user-box .country,
 .user-box .time {
     line-height: 16px;
@@ -739,20 +911,19 @@ fieldset .field.has-icon > .icon {
     padding: 8px 8px 0;
     z-index: 3;
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     background: #151617;
     border: none;
     opacity: 0;
-    box-shadow: 0 12px 20px rgba(0,0,0,0.8);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.8);
     -webkit-transform: scale(0.5);
-        -ms-transform: scale(0.5);
-            transform: scale(0.5);
-    -webkit-transition: opacity 0.2s ease-in-out,
-                        -webkit-transform 0.2s ease-in-out;
-            transition: opacity 0.2s ease-in-out,
-                        transform 0.2s ease-in-out;
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
+
 .user-box.preview .image {
     width: auto;
     height: auto;
@@ -760,22 +931,27 @@ fieldset .field.has-icon > .icon {
     margin: 0;
     position: relative;
 }
+
 .user-box.preview .name {
     padding: 6px 0 0 0;
 }
+
 .user-box.preview .country {
     padding: 0 0 6px 0;
 }
+
 .user-box.preview.fadein {
     opacity: 1;
     -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
+
 .user-box.in-profile {
     padding: 4px 10px 5px;
     border: none;
 }
+
 .user-box.in-profile .image {
     width: 130px;
     height: 130px;
@@ -783,11 +959,13 @@ fieldset .field.has-icon > .icon {
     margin: 0 18px 0 0;
     box-shadow: 5px 5px 0 #333739;
 }
+
 .user-box.in-profile .name {
     line-height: 28px;
     font-size: 24px;
     padding: 52px 0 0 0;
 }
+
 .user-box.in-profile .country {
     line-height: 20px;
     font-size: 17px;
@@ -801,12 +979,15 @@ fieldset .field.has-icon > .icon {
     padding: 0;
     list-style: none;
 }
+
 .posts-list li {
     position: relative;
 }
+
 .posts-list li:not(:last-child) {
     margin: 0 0 15px;
 }
+
 .posts-list li:not(:last-child):after {
     height: 0;
     display: block;
@@ -818,30 +999,38 @@ fieldset .field.has-icon > .icon {
     border-top: 1px solid #36383a;
     border-bottom: 1px solid #111213;
 }
+
 .post {
 }
+
 .post.is-self {
     padding: 4px;
 }
+
 .post-image + .post-text {
     margin: 6px 0 0 0;
 }
+
 .post-text + .post-image {
     margin: 12px 0 0 0;
 }
+
 .post-image img {
     display: block;
 }
+
 .post .user-box {
     height: 38px;
     margin: 10px 0 0 0;
     padding: 0;
     border: none;
 }
+
 .post .user-box .name {
     position: relative;
     top: -4px;
 }
+
 .post .user-box .time {
     position: relative;
     top: -5px;
@@ -857,8 +1046,9 @@ fieldset .field.has-icon > .icon {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
+
 .post-button input {
     width: 90px;
     height: 36px;
@@ -872,20 +1062,24 @@ fieldset .field.has-icon > .icon {
 .comments-list {
     padding: 0 5px;
 }
+
 .comments-list ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 .comments-list ul li {
     position: relative;
     padding: 0 0 6px 21px;
     background: url(../images/1/comment.png) no-repeat 0 6px;
     background-size: 12px 12px;
 }
+
 .comments-list ul li:not(:last-child) {
     margin: 0 0 9px;
 }
+
 .comments-list ul li:not(:last-child):after {
     height: 0;
     display: block;
@@ -897,18 +1091,18 @@ fieldset .field.has-icon > .icon {
     border-top: 1px solid #36383a;
     border-bottom: 1px solid #111213;
 }
+
 .comments-list .text,
 .comments-list .date {
     line-height: 20px;
     font-size: 15px;
 }
+
 .comments-list .date {
     text-align: right;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     color: #666666;
 }
-
-
 
 /* Arrow Bottom */
 
@@ -918,6 +1112,7 @@ fieldset .field.has-icon > .icon {
     display: inline-block;
     position: relative;
 }
+
 .arrow-bottom:after,
 .arrow-bottom:before {
     width: 10px;
@@ -929,14 +1124,15 @@ fieldset .field.has-icon > .icon {
     content: ' ';
     background: #989898;
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
 .arrow-bottom:after {
     left: 6px;
     -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 /* Back Button Panel */
@@ -958,6 +1154,7 @@ fieldset .field.has-icon > .icon {
     border-bottom: 21px solid #1a85d8;
     border-left: 21px solid transparent;
 }
+
 .location-mark:after {
     width: 0;
     height: 0;
@@ -974,10 +1171,21 @@ fieldset .field.has-icon > .icon {
 
 .text-box {
     padding: 4px 12px 12px;
+    color: #ffffff;
 }
+
+.text-box * {
+    color: #ffffff;
+}
+
 .text-box *:last-child {
     margin-bottom: 0;
 }
+
+.text-box a {
+    text-decoration: underline;
+}
+
 .content-box {
     padding: 25px 33px;
 }
@@ -987,6 +1195,7 @@ fieldset .field.has-icon > .icon {
 .sign-box {
     padding: 0 4px;
 }
+
 .sign-box .forgot {
     height: 40px;
     line-height: 34px;
@@ -994,6 +1203,7 @@ fieldset .field.has-icon > .icon {
     font-size: 14px;
     color: #1974bc;
 }
+
 .sign-box .forgot a {
     color: #1974bc;
     text-decoration: none;
@@ -1005,6 +1215,7 @@ fieldset .field.has-icon > .icon {
     -webkit-animation: loader 2s linear infinite;
     animation: loader 2s linear infinite;
 }
+
 @-webkit-keyframes loader {
     0% {
         -webkit-transform: rotate(0deg);
@@ -1013,22 +1224,25 @@ fieldset .field.has-icon > .icon {
         -webkit-transform: rotate(360deg);
     }
 }
+
 @keyframes loader {
     0% {
         -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
         -ms-transform: rotate(360deg);
-            transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
+
 .loader.big {
     width: 42px;
     height: 42px;
     background: url(../images/1/loader-big.png);
     background-size: 42px 42px;
 }
+
 .loader.small {
     width: 22px;
     height: 22px;
@@ -1046,15 +1260,17 @@ fieldset .field.has-icon > .icon {
     bottom: 0;
     z-index: 9999;
     opacity: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     visibility: hidden;
-    -webkit-transition: visibility 0s linear 0.2s,opacity 0.2s linear;
-            transition: opacity 0.2s linear;
+    -webkit-transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+    transition: opacity 0.2s linear;
 }
+
 .loader-container.fadein {
     opacity: 1;
     visibility: visible;
 }
+
 .loader-container .inner {
     width: 58px;
     height: 58px;
@@ -1062,9 +1278,10 @@ fieldset .field.has-icon > .icon {
     top: 50%;
     left: 50%;
     margin: -29px 0 0 -29px;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 58px;
 }
+
 .loader-container .loader {
     position: absolute;
     top: 8px;
@@ -1074,7 +1291,7 @@ fieldset .field.has-icon > .icon {
 /* Uploader */
 
 .uploader {
-    padding: 4px;
+    padding: 7px 4px 4px;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -1085,14 +1302,19 @@ fieldset .field.has-icon > .icon {
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
 }
+
 .uploader.fadein {
     opacity: 1;
 }
+
 .uploader .close {
+    width: 33px;
+    height: 33px;
     float: right;
     margin: 0 0 0 6px;
     cursor: pointer;
 }
+
 .uploader .image {
     width: 33px;
     height: 33px;
@@ -1100,17 +1322,20 @@ fieldset .field.has-icon > .icon {
     overflow: hidden;
     float: left;
 }
+
 .uploader .image img {
     width: 100%;
     height: 100%;
     display: block;
 }
+
 .uploader .bar {
     height: 11px;
     overflow: hidden;
     margin: 11px 0 0 0;
     background: #484848;
 }
+
 .uploader .progress {
     width: 0;
     height: 11px;
@@ -1124,28 +1349,34 @@ fieldset .field.has-icon > .icon {
     padding: 0 33px 0 0;
     position: fixed;
     z-index: 1000;
-    top: 0;
+    top: 45px;
     right: 0;
     left: 0;
     background: #1a85d8;
-    box-shadow: 0 0 18px rgba(0,0,0,0.5);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
     opacity: 0;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
 }
+
 .notification.fadein {
     opacity: 1;
 }
+
 .notification .close {
+    width: 33px;
+    height: 33px;
     position: absolute;
     top: 0;
     right: 0;
     cursor: pointer;
 }
+
 .notification .text {
     width: 100%;
     display: table;
 }
+
 .notification .text .inner {
     height: 25px;
     padding: 2px 4px;
@@ -1155,6 +1386,35 @@ fieldset .field.has-icon > .icon {
     line-height: 14px;
     font-size: 12px;
     color: #fff;
+}
+
+/* Search Toolbar */
+
+.search-toolbar {
+    height: 44px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
+}
+
+.search-toolbar.fadein {
+    opacity: 1;
+}
+
+.search-toolbar .field {
+    height: 32px;
+    margin: 6px 0 0 0;
+}
+
+.search-toolbar .input {
+    height: 32px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 /* Dialog */
@@ -1168,42 +1428,51 @@ fieldset .field.has-icon > .icon {
     bottom: 0;
     z-index: 9999;
     opacity: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     -webkit-transition: opacity 0.2s ease-in-out;
-            transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
+
 .dialog-container.transparent {
     background: transparent;
 }
+
 .dialog-container.fadein {
     opacity: 1;
 }
+
 .dialog-container > .inner {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
 }
+
 .dialog-container.top > .inner {
     vertical-align: top;
 }
+
 .dialog-container.bottom > .inner {
     vertical-align: bottom;
 }
 
 .dialog {
     margin: 12px;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     border-top: 1px solid #333333;
 }
+
 .dialog .buttons {
     padding: 0 15px 15px;
 }
+
 .dialog .buttons:first-child {
     padding: 15px;
 }
+
 .dialog .buttons .cols {
     margin-bottom: 0;
 }
+
 .dialog .message {
     padding: 36px 15px;
     text-align: center;
@@ -1211,6 +1480,7 @@ fieldset .field.has-icon > .icon {
     font-size: 17px;
     color: #fff;
 }
+
 .dialog .message * {
     font-size: 17px;
 }
@@ -1237,6 +1507,7 @@ fieldset .field.has-icon > .icon {
     overflow: hidden;
     background: #141616;
 }
+
 .refresher .bottom {
     width: 100%;
     height: 32px;
@@ -1246,6 +1517,7 @@ fieldset .field.has-icon > .icon {
     background: url(../images/1/logo-refresher.png) no-repeat 50% 0;
     background-size: contain;
 }
+
 .refresher .bottom .text {
     position: absolute;
     right: 4px;
@@ -1257,6 +1529,7 @@ fieldset .field.has-icon > .icon {
     font-size: 9px;
     color: #666666;
 }
+
 .refresher .loader {
     display: none;
     position: absolute;
@@ -1264,6 +1537,7 @@ fieldset .field.has-icon > .icon {
     left: 50%;
     margin: -11px 0 0 -11px;
 }
+
 .refresher .circle {
     width: 33px;
     height: 34px;
@@ -1274,13 +1548,16 @@ fieldset .field.has-icon > .icon {
     background: url(../images/1/refresher-big.png);
     background-size: 100% 100%;
 }
+
 .refresher.refreshing {
     height: 32px;
     position: relative;
 }
+
 .refresher.refreshing .bottom {
     background: none;
 }
+
 .refresher.refreshing .loader {
     display: block;
 }
@@ -1290,21 +1567,25 @@ fieldset .field.has-icon > .icon {
 .search-block {
     padding: 4px 0 0 0;
 }
+
 .search-block > .r {
     width: 25%;
     float: right;
     margin: 0 0 0 4px;
 }
+
 .search-block > .l {
     padding: 0 0 0 4px;
     overflow: hidden;
 }
+
 .search-block input[type="text"] {
     height: 32px;
     margin: 0;
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 .search-block > .r a {
     height: 24px;
     display: block;
@@ -1316,9 +1597,11 @@ fieldset .field.has-icon > .icon {
     font-size: 12px;
     color: #a2a2a2;
 }
+
 .search-block > .r a:active {
     color: #1a85d8;
 }
+
 .search-block > .r a br {
     line-height: inherit;
 }
@@ -1326,59 +1609,52 @@ fieldset .field.has-icon > .icon {
 /* Arrow Backward */
 
 .arrow-back {
-    width: 14px;
-    height: 22px;
-}
-.arrow-back:after,
-.arrow-back:before {
-    width: 15px;
-    height: 2px;
-    display: block;
-    position: absolute;
-    top: 15px;
-    left: 0;
-    content: ' ';
-    background: #989898;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-}
-.arrow-back:after {
-    top: 5px;
-    -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    width: 9px;
+    height: 14px;
+    background: url(../images/icons/bar-arrow-back.png) no-repeat;
+    background-size: contain;
 }
 
 /* Back Button */
 
 .back-button {
-    height: 41px;
+    min-width: 23px;
+    height: 44px;
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 21px;
 }
+
 .back-button > .inner {
     display: block;
     position: relative;
-    line-height: 41px;
-    font-size: 15px;
-    color: #989898;
+    line-height: 44px;
+    font-size: 12px;
+    color: #4c80c1;
 }
+
 .back-button .arrow-back {
+    margin: -7px 0 0 0;
     position: absolute;
     top: 50%;
     left: 8px;
-    margin: -11px 0 0 0;
+    background: url(../images/icons/bar-arrow-back.png) no-repeat;
+    background-size: contain;
 }
+
 .back-button:active > .inner {
     color: #fff;
 }
-.back-button:active .arrow-back:after,
-.back-button:active .arrow-back:before {
-    background: #fff;
+
+.picture-bar .back-button,
+.footer .back-button {
+    height: 50px;
+}
+.picture-bar .back-button > .inner,
+.footer .back-button > .inner {
+    line-height: 50px;
 }
 
 /* Service Boxes */
@@ -1393,9 +1669,10 @@ fieldset .field.has-icon > .icon {
     display: block;
     position: relative;
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .service-box-item > .inner {
     display: block;
     top: 0;
@@ -1404,6 +1681,7 @@ fieldset .field.has-icon > .icon {
     bottom: 0;
     position: absolute;
 }
+
 .service-box-item img {
     width: auto;
     height: 100%;
@@ -1412,6 +1690,7 @@ fieldset .field.has-icon > .icon {
     float: left;
     background-repeat: no-repeat;
 }
+
 .service-box-item .small,
 .service-box-item .big {
     height: 45%;
@@ -1420,9 +1699,11 @@ fieldset .field.has-icon > .icon {
     position: relative;
     text-decoration: none;
 }
+
 .service-box-item .big {
     height: 55%;
 }
+
 .service-box-item .small span,
 .service-box-item .big span {
     position: absolute;
@@ -1432,56 +1713,67 @@ fieldset .field.has-icon > .icon {
     font-size: 19px;
     color: #fff;
 }
+
 .service-box-item .big span {
     top: 1px;
     line-height: 27px;
     font-size: 27px;
 }
+
 .service-box-item.facebook {
     background: #3d5b9b;
     border-top: 1px solid #647caf;
     border-bottom: 1px solid #2b3d63;
 }
+
 .service-box-item.facebook img {
     background-image: url(../images/svg/facebook.svg);
     background-position: 48% 250%;
     background-size: 48% auto;
 }
+
 .service-box-item.twitter {
     background: #2b8cc0;
     border-top: 1px solid #55a3cd;
     border-bottom: 1px solid #173544;
 }
+
 .service-box-item.twitter img {
     background-image: url(../images/1/join-twitter.png);
     background-position: 44% 156%;
     background-size: 88% auto;
 }
+
 .service-box-item.crowd {
     background: #555759;
     border-top: 1px solid #888a8b;
     border-bottom: 1px solid #3b3d3e;
 }
+
 .service-box-item.crowd img {
     background-image: url(../images/1/join-crowd.png);
-    background-position:  48% 222%;
+    background-position: 48% 222%;
     background-size: 80.00% auto;
 }
+
 .service-box-item.google {
     background: #d95333;
     border-top: 1px solid #e48771;
     border-bottom: 1px solid #973a24;
 }
+
 .service-box-item.google img {
     background-image: url(../images/1/join-gplus.png);
     background-position: 52% 198%;
     background-size: 86% auto;
 }
+
 .service-box-item.email {
     background: #252627;
     border-top: 1px solid #515152;
     border-bottom: 1px solid #0a0a0a;
 }
+
 .service-box-item.email img {
     background-image: url(../images/svg/email.svg);
     background-position: 72% 214%;
@@ -1498,12 +1790,14 @@ fieldset .field.has-icon > .icon {
 .single-box {
     padding: 26px;
 }
+
 .single-box > .title {
     margin: 0 0 22px;
     text-align: center;
     line-height: 32px;
     font-size: 28px;
 }
+
 .single-box > .descr {
     padding: 12px 0 0 0;
     margin: 0 0 32px;
@@ -1515,26 +1809,31 @@ fieldset .field.has-icon > .icon {
     width: 100%;
     height: 100%;
     position: relative;
-    background: -webkit-linear-gradient(top, #242424 0%, #0f0f0f 70px);
-    background:         linear-gradient(to bottom, #242424 0%, #0f0f0f 70px);
+    background: #000000;
 }
 
 /* Header */
 
 .header {
-    min-height: 41px;
+    min-height: 44px;
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 3;
+    background: -webkit-linear-gradient(top, #070707 0%, #0a0a09 100%);
+    background: linear-gradient(to bottom, #070707 0%, #0a0a09 100%);
+    border-bottom: 1px solid #262626;
 }
+
 .header > .inner {
-    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    right: 44px;
+    bottom: 0;
+    left: 44px;
 }
-.header > .inner:first-child {
-    padding: 0;
-}
+
 .header h1,
 .header h2,
 .header h3 {
@@ -1545,13 +1844,36 @@ fieldset .field.has-icon > .icon {
     white-space: nowrap;
     text-align: center;
     font-weight: normal;
+    color: #fff;
 }
+
 .header h1 {
     line-height: 79px;
 }
+
 .header h2 {
-    padding: 9px 0 3px 0;
-    line-height: 22px;
+    padding: 11px 0 0 0;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.header .dir-left,
+.header .dir-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.header .dir-right {
+    left: auto;
+    right: 0;
+}
+.header .dir-left .icon,
+.header .dir-right .icon {
+    height: 100%;
+    padding: 0 12px;
+    cursor: pointer;
 }
 
 /* Service Header */
@@ -1560,9 +1882,11 @@ fieldset .field.has-icon > .icon {
     position: absolute;
     background-size: 100% 100%;
 }
+
 .header.service > .inner {
     padding: 0 0 0 80px;
 }
+
 .header.service h2 {
     padding: 0;
     text-align: left;
@@ -1575,6 +1899,7 @@ fieldset .field.has-icon > .icon {
     background: #2b8cc0;
     box-shadow: 0 1px 0 #55a3cd inset;
 }
+
 .header.service.twitter .image {
     width: 70px;
     height: 52px;
@@ -1582,10 +1907,12 @@ fieldset .field.has-icon > .icon {
     left: 2px;
     background-image: url(../images/svg/twitter.svg);
 }
+
 .header.service.facebook {
     background: #3d5b9b;
     box-shadow: 0 1px 0 #647caf inset;
 }
+
 .header.service.facebook .image {
     width: 38px;
     height: 70px;
@@ -1593,18 +1920,24 @@ fieldset .field.has-icon > .icon {
     left: 7px;
     background-image: url(../images/svg/facebook.svg);
 }
+
 .header.service.email {
     background: #1e2021;
     background: -webkit-linear-gradient(top, #242627 0%, #1e2021 100%);
-    background:         linear-gradient(to bottom, #242627 0%, #1e2021 100%);
+    background: linear-gradient(to bottom, #242627 0%, #1e2021 100%);
     box-shadow: 0 1px 0 #505152 inset;
 }
+
 .header.service.email .image {
     width: 62px;
     height: 53px;
     top: 22px;
     left: 9px;
     background-image: url(../images/svg/email.svg);
+}
+
+.layout.has-header-big .header {
+    height: 78px;
 }
 
 /* Content */
@@ -1619,14 +1952,17 @@ fieldset .field.has-icon > .icon {
 }
 
 .layout.has-header .content {
-    top: 41px;
+    top: 45px;
 }
+
 .layout.has-header-big .content {
     top: 79px
 }
+
 .layout.has-footer .content {
-    bottom: 41px;
+    bottom: 50px;
 }
+
 .layout.has-footer-button .content {
     bottom: 92px;
 }
@@ -1636,6 +1972,7 @@ fieldset .field.has-icon > .icon {
     height: 100%;
     display: table;
 }
+
 .centering > .inner {
     display: table-cell;
     vertical-align: middle;
@@ -1645,13 +1982,14 @@ fieldset .field.has-icon > .icon {
 /* Footer */
 
 .footer {
-    min-height: 41px;
+    min-height: 50px;
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 3;
 }
+
 .footer > .inner {
     position: absolute;
     top: 0;
@@ -1669,9 +2007,6 @@ fieldset .field.has-icon > .icon {
     left: 0;
 }
 
-.footer.has-menu {
-    background: #141516;
-}
 .footer.has-menu > .inner {
     left: 0;
     right: 0;
@@ -1685,17 +2020,23 @@ fieldset .field.has-icon > .icon {
     position: relative;
     overflow: hidden;
 }
+
 .main-layout .layout {
     z-index: 2;
-    background: -webkit-linear-gradient(top, #0f1011 0%, #1e2021 70px);
-    background:         linear-gradient(to bottom, #0f1011 0%, #1e2021 70px);
     box-shadow: -1px 0 0 #333739;
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
-            transition:         transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
 }
+
 .main-layout.open .layout {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
+}
+
+/* Header */
+
+.header .logo-inline-centered {
+    margin: 13px auto 0;
 }
 
 /* Sidebar */
@@ -1707,15 +2048,17 @@ fieldset .field.has-icon > .icon {
     top: 0;
     z-index: 1;
     background: -webkit-linear-gradient(bottom, #1e2021 0%, #0a0b0b 100%);
-    background:         linear-gradient(to top, #1e2021 0%, #0a0b0b 100%);
+    background: linear-gradient(to top, #1e2021 0%, #0a0b0b 100%);
     border-right: 1px solid #333739;
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .sidebar.left {
     left: 0;
 }
+
 .sidebar.right {
     right: 0;
 }
@@ -1728,6 +2071,7 @@ fieldset .field.has-icon > .icon {
     font-size: 18px;
     color: #FFFFFF;
 }
+
 .sidebar hr {
     height: 1px;
     margin: 14px 0;
@@ -1736,6 +2080,7 @@ fieldset .field.has-icon > .icon {
     background: #272728;
     border: none;
 }
+
 .sidebar-button {
     height: 48px;
     display: block;
@@ -1749,15 +2094,18 @@ fieldset .field.has-icon > .icon {
     text-decoration: none;
     background-repeat: no-repeat;
 }
+
 .sidebar-button:active {
     background-color: #333739;
     color: #ffffff;
 }
+
 .sidebar-button.signout {
     background-image: url(../images/1/sign-out.png);
     background-position: 10px 13px;
     background-size: 16px 22px;
 }
+
 .sidebar-button.signout:active {
     background-image: url(../images/1/sign-out-a.png);
 }
@@ -1765,7 +2113,6 @@ fieldset .field.has-icon > .icon {
 /* Menu Button */
 
 .menu-button {
-    width: 26px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1773,19 +2120,24 @@ fieldset .field.has-icon > .icon {
     z-index: 2;
     cursor: pointer;
 }
+
 .menu-button span {
-	width: 12px;
-    height: 2px;
+    width: 20px;
+    height: 3px;
     display: block;
-    margin: 4px 0 0 4px;
-    background: #929292;
+    margin: 3px 12px 0 12px;
+    border-radius: 1px;
+    background: #017aff;
 }
+
 .menu-button span:nth-child(1) {
-    margin-top: 13px;
+    margin-top: 15px;
 }
+
 .main-layout.open .menu-button span {
-    background: #1a85d8;
+    background: #017aff;
 }
+
 .main-layout.open .menu-button:active span,
 .menu-button:active span {
     background: #fff;
@@ -1796,10 +2148,11 @@ fieldset .field.has-icon > .icon {
 .main-menu {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 0;
     bottom: 0;
-    left: 25px;
+    left: 0;
 }
+
 .main-menu > ul {
     width: 100%;
     height: 100%;
@@ -1809,34 +2162,38 @@ fieldset .field.has-icon > .icon {
     table-layout: fixed;
     list-style: none;
 }
+
 .main-menu > ul > li {
     height: 100%;
     padding: 0 1px;
     display: table-cell;
     vertical-align: top;
 }
+
 .main-menu > ul > li > div {
     height: 100%;
     position: relative;
 }
+
 .main-menu > ul > li > div > a {
     height: 100%;
     display: block;
     position: relative;
     z-index: 2;
     opacity: 0.6;
-    background: #141516;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
 }
+
 .main-menu a span {
     height: 100%;
     display: block;
 }
+
 .main-menu a .text {
     position: absolute;
-    top: 26px;
+    top: 32px;
     right: 0;
     left: 0;
     text-align: center;
@@ -1844,18 +2201,19 @@ fieldset .field.has-icon > .icon {
     font-size: 9px;
     color: #fff;
 }
+
 .main-menu a .image {
     height: 100%;
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
 }
+
 .main-menu > ul > li.fadein > div > a,
 .main-menu > ul > li.active > div > a,
 .main-menu > ul > li > div:active > a,
 .main-menu > ul > li > div > a:active {
-    background: -webkit-linear-gradient(top, #0074bf 0%, #008de8 100%);
-    background:         linear-gradient(to top, #0074bf 0%, #008de8 100%);
+    background-color: #4585f4;
     opacity: 1;
 }
 
@@ -1869,60 +2227,68 @@ fieldset .field.has-icon > .icon {
     list-style: none;
     opacity: 0;
     -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-    -webkit-transform: translate(0,100%);
-            transform: translate(0,100%);
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
 }
+
 .main-menu > ul > li.fadein > div > ul,
 .main-menu > ul > li:active > div > ul {
     opacity: 1;
-    -webkit-transform: translate(0,0);
-            transform: translate(0,0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
 }
+
 .main-menu > ul ul li {
     margin: 0 0 2px;
     background: #000;
 }
+
 .main-menu > ul ul li a {
     height: 41px;
     display: block;
     -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
 }
+
 .main-menu > ul ul li.fadein a,
 .main-menu > ul ul li a:active {
     background: -webkit-linear-gradient(top, #0074bf, #008de8);
-    background:         linear-gradient(top, #0074bf, #008de8);
+    background: linear-gradient(top, #0074bf, #008de8);
 }
 
 .main-menu .tab-chat .image {
-    background-image: url(../images/1/tab-chat.png);
+    background-image: url(../images/icons/tab-chat.png);
 }
+
 .main-menu .tab-invite .image {
-    background-image: url(../images/1/tab-invite.png);
+    background-image: url(../images/icons/tab-invite.png);
 }
+
 .main-menu .tab-crowd .image {
-    background-image: url(../images/1/tab-crowd.png);
+    background-image: url(../images/icons/tab-crowd.png);
 }
+
 .main-menu .tab-crowd .text {
     display: none;
 }
+
 .main-menu .tab-feed .image {
-    background-image: url(../images/1/tab-feed.png);
+    background-image: url(../images/icons/tab-feed.png);
 }
-.main-menu .tab-post > div {
-    left: 4px;
-}
+
 .main-menu .tab-post .image {
-    background-image: url(../images/1/tab-post.png);
+    background-image: url(../images/icons/tab-post.png);
 }
 
 .main-menu .add-gif .image {
     background-image: url(../images/1/add-gif.png);
 }
+
 .main-menu .add-photo .image {
     background-image: url(../images/1/add-photo.png);
 }
+
 .main-menu .add-text .image {
     background-image: url(../images/1/add-text.png);
 }
@@ -1932,6 +2298,7 @@ fieldset .field.has-icon > .icon {
 .page-crowd {
     position: relative;
 }
+
 .page-crowd .avatars-list {
     padding: 2px;
 }
@@ -1949,6 +2316,7 @@ fieldset .field.has-icon > .icon {
     height: 100%;
     position: relative;
 }
+
 .page-invite .sign-boxes {
     width: 100%;
     height: auto;
@@ -1968,17 +2336,21 @@ fieldset .field.has-icon > .icon {
     padding: 0;
     list-style: none;
 }
+
 .chat-rooms:first-child {
     margin: 43px 0 0 0;
 }
+
 .chat-rooms li {
     margin: 15px 0 0 0;
     background: #3e3e3e;
     border-top: 1px solid #787878;
 }
+
 .chat-rooms li:first-child {
     margin: 0;
 }
+
 .chat-rooms li a {
     display: block;
     padding: 0 20px;
@@ -1986,6 +2358,7 @@ fieldset .field.has-icon > .icon {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
 .chat-rooms li a,
 .chat-rooms li a span {
     line-height: 41px;
@@ -1993,6 +2366,7 @@ fieldset .field.has-icon > .icon {
     font-size: 16px;
     color: #fff;
 }
+
 .chat-rooms li .icon {
     width: 17px;
     height: 41px;
@@ -2001,6 +2375,7 @@ fieldset .field.has-icon > .icon {
     margin: 0 9px 0 0;
     background-size: contain;
 }
+
 .chat-rooms li a .text,
 .chat-rooms li a .counter {
     max-width: 84%;
@@ -2010,17 +2385,21 @@ fieldset .field.has-icon > .icon {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
 .chat-rooms li a .counter {
     width: 14%;
     margin: 0 0 0 2%;
 }
+
 .chat-rooms li a .text:last-child {
     max-width: 100%;
 }
+
 .chat-rooms li a:active,
 .chat-rooms li a:active span {
     color: #1a84d6;
 }
+
 .chat-rooms li a:active .icon.chat-room {
     background-image: url(../images/1/chat-room-h.png);
 }
@@ -2031,6 +2410,7 @@ fieldset .field.has-icon > .icon {
     bottom: 33px;
     left: 12px;
 }
+
 .chat-start-message h2,
 .chat-start-message h3 {
     margin: 0;
@@ -2044,21 +2424,26 @@ fieldset .field.has-icon > .icon {
     right: 26px;
     left: 26px;
 }
+
 .page-chat-private .buttons .button {
     margin: 15px 0 0 0;
 }
+
 .page-chat-private .buttons .button:first-child {
     margin: 0;
 }
+
 .chat-private-search {
     position: absolute;
     right: 26px;
     bottom: 38px;
     left: 26px;
 }
+
 .chat-private-search .search-input {
     margin: 0;
 }
+
 .chat-private-search .text {
     margin: 0 0 15px;
     text-align: center;
@@ -2068,16 +2453,20 @@ fieldset .field.has-icon > .icon {
 .page-chat-invite-crowd {
     padding: 2px;
 }
+
 .page-chat-invite-crowd > .text {
     padding: 0 2px;
     font-size: 14px;
 }
+
 .page-chat-invite-crowd .avatars-list .item {
     position: relative;
 }
+
 .page-chat-invite-crowd .avatars-list.offline .item .inner.loaded {
     opacity: 0.4;
 }
+
 .page-chat-invite-crowd .avatars-list .item.active:after {
     display: block;
     position: absolute;
@@ -2095,6 +2484,7 @@ fieldset .field.has-icon > .icon {
     height: 100%;
     position: relative;
 }
+
 .page-chat-room .listing {
     position: absolute;
     top: 0;
@@ -2103,6 +2493,7 @@ fieldset .field.has-icon > .icon {
     left: 0;
     padding: 0 4px;
 }
+
 .page-chat-room .writer {
     padding: 4px;
     position: absolute;
@@ -2111,26 +2502,31 @@ fieldset .field.has-icon > .icon {
     left: 0;
     background: #1e2021;
 }
+
 .page-chat-room .writer textarea {
     height: 41px;
     margin: 0;
     padding-right: 80px;
     resize: none;
 }
+
 .page-chat-room .writer .icons {
     position: absolute;
     top: 14px;
     right: 14px;
 }
+
 .page-chat-room .writer .icons .icon {
-    display:  block;
+    display: block;
     float: left;
     margin: 0 0 0 8px;
     cursor: pointer;
 }
+
 .page-chat-room .writer .icons .icon:first-child {
     margin: 0;
 }
+
 .page-chat-room .writer .button {
     width: 70px;
     height: 40px;
@@ -2142,10 +2538,12 @@ fieldset .field.has-icon > .icon {
     line-height: 40px;
     font-size: 18px;
 }
+
 .page-chat-room .writer textarea:focus {
     height: 82px;
     padding-top: 41px;
 }
+
 .page-chat-room .writer textarea:focus + .button {
     display: block;
 }
@@ -2155,25 +2553,31 @@ fieldset .field.has-icon > .icon {
     padding: 0;
     list-style: none;
 }
+
 .chat-listing li {
     margin: 6px 0 0 0;
 }
+
 .chat-listing li:first-child {
     margin: 0;
 }
+
 .chat-listing li > .l {
     width: 38px;
     float: left;
 }
+
 .chat-listing li > .l img {
     width: 38px;
     height: 38px;
     display: block;
 }
+
 .chat-listing li > .r {
     overflow: hidden;
     padding: 0 6px;
 }
+
 .chat-listing li > .r .text {
     max-width: 100%;
     position: relative;
@@ -2181,6 +2585,7 @@ fieldset .field.has-icon > .icon {
     line-height: 19px;
     color: #b3b3b3;
 }
+
 .chat-listing li > .r .date {
     clear: both;
     font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -2193,6 +2598,7 @@ fieldset .field.has-icon > .icon {
     float: left;
     background: #555759;
 }
+
 .chat-listing li.companion > .r .text:before {
     display: block;
     position: absolute;
@@ -2203,6 +2609,7 @@ fieldset .field.has-icon > .icon {
     border-right: 5px solid #555759;
     border-bottom: 5px solid transparent;
 }
+
 .chat-listing li.companion > .r .date {
     float: left;
 }
@@ -2210,10 +2617,12 @@ fieldset .field.has-icon > .icon {
 .chat-listing li.me > .l {
     float: right;
 }
+
 .chat-listing li.me > .r .text {
     float: right;
     background: #3e3e3e;
 }
+
 .chat-listing li.me > .r .text:after {
     display: block;
     position: absolute;
@@ -2224,6 +2633,7 @@ fieldset .field.has-icon > .icon {
     border-left: 5px solid #3e3e3e;
     border-bottom: 5px solid transparent;
 }
+
 .chat-listing li.me > .r .date {
     float: right;
 }
@@ -2237,15 +2647,17 @@ fieldset .field.has-icon > .icon {
     overflow: hidden;
     background: #1e2021;
 }
+
 .start-logo {
     width: 100%;
     height: 0;
     padding: 0 0 100%;
     position: absolute;
-	z-index: 3;
+    z-index: 3;
     top: 0;
     left: 0;
 }
+
 .start-logo img {
     display: block;
     position: absolute;
@@ -2255,34 +2667,38 @@ fieldset .field.has-icon > .icon {
     background: url(../images/1/start-logo.png);
     background-size: 100% 100%;
 }
+
 .start-overlay {
     width: 100%;
     height: 75%;
     position: absolute;
-	z-index: 2;
+    z-index: 2;
     bottom: 0;
     right: 0;
-    background: -webkit-linear-gradient(bottom, #000000 0%, rgba(0,0,0,0) 100%);
-    background:         linear-gradient(to top, #000000 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 /* List */
 
 .start-layout .avatars-list {
     padding: 1px 0 0 1px;
-	position: relative;
-	z-index: 1;
+    position: relative;
+    z-index: 1;
 }
+
 .start-layout .avatars-list .item {
     width: 16.6666%;
     padding: 0 1px 1px 0;
 }
+
 .start-layout .avatars-list .empty-row {
-	padding: 0 0 1px 0;
-	background: #000;
+    padding: 0 0 1px 0;
+    background: #000;
 }
+
 .start-layout .avatars-list .empty-row img {
-	display: block;
+    display: block;
 }
 
 /* Buttons */
@@ -2290,22 +2706,26 @@ fieldset .field.has-icon > .icon {
 .icon-dock {
     display: block;
 }
+
 .icon-dock .icon {
     display: block;
-    float:  left;
+    float: left;
     margin: 0 0 0 3px;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100% 100%;
 }
+
 .icon-dock .icon:first-child {
     margin: 0;
 }
+
 .icon.facebook-smallest {
     width: 19px;
     height: 19px;
     background-image: url(../images/1/facebook-smallest.png);
 }
+
 .icon.twitter-smallest {
     width: 24px;
     height: 19px;
@@ -2314,14 +2734,15 @@ fieldset .field.has-icon > .icon {
 
 .start-buttons {
     position: absolute;
-    right:0;
+    right: 0;
     bottom: 0;
     left: 0;
-	z-index: 4;
+    z-index: 4;
     padding: 0 26px 16px;
     background: url(../images/1/start-glow.png) 0 100% no-repeat;
     background-size: 100% 30px;
 }
+
 .start-buttons .button {
     height: 52px;
     position: relative;
@@ -2329,9 +2750,11 @@ fieldset .field.has-icon > .icon {
     line-height: 52px;
     margin: 14px 0 0 0;
 }
+
 .start-buttons .button:first-child {
     margin: 0;
 }
+
 .start-buttons .button .icon-dock {
     position: absolute;
     top: 16px;
@@ -2349,11 +2772,13 @@ fieldset .field.has-icon > .icon {
 .profile-image-layout input[type="button"]:last-child {
     margin: 12px 0 0 0;
 }
+
 .profile-image-layout .button,
 .profile-image-layout .button-primary,
 .profile-image-layout input[type="button"] {
-	font-size: 20px;
+    font-size: 20px;
 }
+
 .profile-image {
     width: 168px;
     height: 168px;
@@ -2361,6 +2786,7 @@ fieldset .field.has-icon > .icon {
     background: url(../images/1/profile-image.png);
     background-size: contain;
 }
+
 .profile-image img {
     width: 100%;
     height: 100%;
@@ -2377,6 +2803,7 @@ fieldset .field.has-icon > .icon {
 
 .picture-layout {
 }
+
 .picture-layout img {
     width: auto;
     height: auto;
@@ -2393,21 +2820,24 @@ fieldset .field.has-icon > .icon {
     bottom: 0;
     left: 0;
     z-index: 1000;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: visibility 0s linear 0.2s,opacity 0.2s linear;
-            transition: opacity 0.2s linear;
+    -webkit-transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+    transition: opacity 0.2s linear;
 }
+
 .picture-bar.fadein {
     opacity: 1;
     visibility: visible;
 }
+
 .picture-bar .text {
     padding: 9px 12px 0;
     clear: both;
     color: #fff;
 }
+
 .picture-bar .back-button {
     position: relative;
     float: left;
@@ -2419,10 +2849,12 @@ fieldset .field.has-icon > .icon {
     position: relative;
     margin: 0 0 12px;
 }
+
 .search-input input {
     margin: 0;
     padding-right: 40px;
 }
+
 .search-input .button {
     width: 40px;
     height: 40px;
@@ -2430,29 +2862,34 @@ fieldset .field.has-icon > .icon {
     top: 0;
     right: 0;
 }
+
 .search-input .button {
     background: transparent;
     opacity: 0.6;
     -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
+
 .search-input .button .icon {
     display: block;
 }
+
 .search-input .button:active {
     opacity: 1;
     background: -webkit-linear-gradient(top, #1b8ce5 0%, #1873ba 100%);
-    background:         linear-gradient(to bottom, #1b8ce5 0%, #1873ba 100%);
+    background: linear-gradient(to bottom, #1b8ce5 0%, #1873ba 100%);
 }
 
 .search-properties {
     padding: 0 0 0 8px;
 }
+
 .search-properties ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 .search-properties label {
     color: #fff;
     font-size: 16px;
@@ -2463,9 +2900,11 @@ fieldset .field.has-icon > .icon {
 .page-invite-crowd .avatars-list {
     padding: 2px;
 }
+
 .page-invite-crowd .avatars-list .item .inner.loaded {
     opacity: 0.4;
 }
+
 .page-invite-crowd .avatars-list .item.active .inner.loaded {
     opacity: 1;
 }
@@ -2477,11 +2916,13 @@ fieldset .field.has-icon > .icon {
     height: 100%;
     position: relative;
 }
+
 .slider {
     width: 100%;
     height: 100%;
     position: relative;
 }
+
 .slider .slides {
     width: 100%;
     height: 100%;
@@ -2493,6 +2934,7 @@ fieldset .field.has-icon > .icon {
     padding: 0;
     list-style: none;
 }
+
 .slider .slides .slide {
     width: 100%;
     height: 100%;
@@ -2504,8 +2946,9 @@ fieldset .field.has-icon > .icon {
     opacity: 0;
     background: #000000;
     -webkit-transition: opacity 0.3s ease-in-out;
-            transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
+
 .slider .slides .slide .image {
     width: 100%;
     height: 100%;
@@ -2515,6 +2958,7 @@ fieldset .field.has-icon > .icon {
     z-index: 1;
     overflow: hidden;
 }
+
 .slider .slides .slide .image img {
     width: 100%;
     height: auto;
@@ -2530,12 +2974,14 @@ fieldset .field.has-icon > .icon {
     z-index: 2;
     background-size: contain;
 }
+
 .slider .logo.big {
     width: 235px;
     height: 120px;
     bottom: 47%;
     background-image: url(../images/slider/logo-big.png);
 }
+
 .slider .logo.small {
     width: 135px;
     height: 60px;
@@ -2552,6 +2998,7 @@ fieldset .field.has-icon > .icon {
     text-align: center;
     color: #ffffff;
 }
+
 .slider .text h1 {
     margin: 0;
     line-height: 28px;
@@ -2559,6 +3006,7 @@ fieldset .field.has-icon > .icon {
     font-size: 24px;
     color: inherit;
 }
+
 .slider .text p {
     margin: 14px 0 0 0;
     font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -2566,20 +3014,25 @@ fieldset .field.has-icon > .icon {
     font-size: 16px;
     color: inherit;
 }
+
 .slider .icon {
     width: 105px;
     height: 75px;
     bottom: 44.5%;
 }
+
 .slider .start-search {
     background-image: url(../images/slider/search.png);
 }
+
 .slider .start-chat {
     background-image: url(../images/slider/chat.png);
 }
+
 .slider .start-pm {
     background-image: url(../images/slider/pm.png);
 }
+
 .slider .start-invite {
     background-image: url(../images/slider/invite.png);
 }
@@ -2595,6 +3048,7 @@ fieldset .field.has-icon > .icon {
     overflow: hidden;
     text-align: center;
 }
+
 .slider .buttons div {
     width: 9px;
     height: 9px;
@@ -2605,11 +3059,13 @@ fieldset .field.has-icon > .icon {
     border-radius: 9px;
     cursor: pointer;
     -webkit-transition: background-color 1s ease-in-out;
-            transition: background-color 1s ease-in-out;
+    transition: background-color 1s ease-in-out;
 }
+
 .slider .buttons div:first-child {
     margin: 0;
 }
+
 .slider .buttons .active {
     background: #ffffff;
 }
@@ -2619,6 +3075,7 @@ fieldset .field.has-icon > .icon {
     height: 100%;
     position: relative;
 }
+
 .modern-menu > ul {
     width: 100%;
     height: 100%;
@@ -2628,21 +3085,24 @@ fieldset .field.has-icon > .icon {
     list-style: none;
     table-layout: fixed;
 }
+
 .modern-menu > ul > li {
     height: 100%;
     display: table-cell;
     vertical-align: top;
 }
+
 .modern-menu > ul > li > a {
     height: 100%;
     display: block;
     background: #4c80c2;
     text-decoration: none;
     text-align: center;
-    line-height: 41px;
+    line-height: 50px;
     font-size: 18px;
     color: #ffffff;
 }
+
 .modern-menu > ul > li:first-child > a {
     background: #ffffff;
     color: #2b2b2b;
@@ -2652,26 +3112,32 @@ fieldset .field.has-icon > .icon {
 
 .page-signup {
 }
+
 .page-signup .form {
     padding: 16px;
 }
+
 .page-signup .form fieldset {
     margin: 0 0 16px;
 }
+
 .page-signup .text-box {
     margin: 10px 0 0 0;
     padding: 0 5px;
 }
+
 .page-signup .text-box * {
     margin: 0;
     line-height: 13px;
     font-size: 10px;
 }
+
 .or-horizonal {
     margin: 6px 0;
     position: relative;
     text-align: center;
 }
+
 .or-horizonal div {
     display: inline-block;
     position: relative;
@@ -2682,6 +3148,7 @@ fieldset .field.has-icon > .icon {
     font-size: 10px;
     color: #b3b3b3;
 }
+
 .or-horizonal:after {
     height: 1px;
     display: block;
@@ -2692,6 +3159,7 @@ fieldset .field.has-icon > .icon {
     content: '';
     background: #b3b3b3;
 }
+
 .logo-inline-centered {
     width: 129px;
     height: 19px;
@@ -2699,109 +3167,9 @@ fieldset .field.has-icon > .icon {
     background: url(../images/logo-inline.png);
     background-size: contain;
 }
+
 .page-signup .logo-inline-centered {
     margin: 12px auto 0;
-}
-
-/* ******* IOS7 STYLES ******* */
-
-.ios7-ui,
-.ios7-ui * {
-    font-family: HelveticaNeue, helvetica, arial, sans-serif;
-}
-.layout.ios7-ui {
-    background: #000000;
-}
-
-/* *** FORM *** */
-
-/* Buttons */
-
-.ios7-ui .button {
-    height: 44px;
-    border-radius: 3px;
-    line-height: 44px;
-    font-weight: 500;
-    font-size: 19px;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}
-.ios7-ui .button.has-icon {
-    padding: 0 0 0 60px;
-    position: relative;
-    text-align: left;
-}
-.ios7-ui .button.has-icon .icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.ios7-ui .button.button-primary {
-    background: #4b80c2;
-}
-.ios7-ui .button.button-facebook {
-    background: #3b599a;
-}
-.ios7-ui .button.button-twitter {
-    background: #5fa8dd;
-}
-.ios7-ui .buttons .button {
-    margin: 16px 0 0 0;
-}
-.ios7-ui .buttons .button:first-child {
-    margin: 0;
-}
-
-/* *** LAYOUT *** */
-
-/* Header */
-
-.ios7-ui .header {
-    min-height: 29px;
-    background: #000000;
-    border-bottom: 1px solid #5f5f5f;
-}
-.ios7-ui .header h2 {
-    padding: 0;
-    line-height: 29px;
-    font-size: 16px;
-    color: #fff;
-}
-.ios7-ui .back-button {
-    height: 29px;
-    padding: 0 0 0 21px;
-}
-.ios7-ui .back-button > .inner {
-    line-height: 29px;
-    font-size: 12px;
-    color: #4c80c1;
-}
-.ios7-ui .back-button .arrow-back {
-    width: 9px;
-    height: 14px;
-    margin: 0;
-    top: 8px;
-    left: 8px;
-    background: url(../images/icons/bar-arrow-back.png) no-repeat;
-    background-size: contain;
-}
-.ios7-ui .back-button .arrow-back:after,
-.ios7-ui .back-button .arrow-back:before {
-    display: none;
-}
-
-/* Content */
-
-.layout.has-header.ios7-ui .content {
-    top: 30px
-}
-.ios7-ui .text-box,
-.ios7-ui .text-box * {
-    color: #ffffff;
-}
-.ios7-ui .text-box a {
-    text-decoration: underline;
 }
 
 /* ******* ADAPTIVE ******* */
@@ -2809,46 +3177,49 @@ fieldset .field.has-icon > .icon {
 /* Images For Retina */
 
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
-only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min-device-pixel-ratio: 1.5) {
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
 
     /* Icons */
 
     .icon.minus {
         background-image: url(../images/2/minus.png);
     }
+
     .icon.plus {
         background-image: url(../images/2/plus.png);
     }
+
     .icon.facebook-smallest {
         background-image: url(../images/2/facebook-smallest.png);
     }
+
     .icon.twitter-smallest {
         background-image: url(../images/2/twitter-smallest.png);
     }
-    .icon.close {
-        background-image: url(../images/2/close.png);
-    }
-    .icon.close.white {
-        background-image: url(../images/2/close-white.png);
-    }
+
     .icon.open-chat {
         background-image: url(../images/2/open-chat.png);
     }
+
     .icon.chat-room {
         background-image: url(../images/2/chat-room.png);
     }
+
     .icon.writer-facebook {
         background-image: url(../images/2/writer-facebook.png);
     }
+
     .icon.writer-facebook:active,
     .icon.writer-facebook.active {
         background-image: url(../images/2/writer-facebook-a.png);
     }
+
     .icon.writer-twitter {
         background-image: url(../images/2/writer-twitter.png);
     }
+
     .icon.writer-twitter:active,
     .icon.writer-twitter.active {
         background-image: url(../images/2/writer-twitter-a.png);
@@ -2860,20 +3231,25 @@ only screen and (min-device-pixel-ratio: 1.5) {
     .input.ok {
         background-image: url(../images/2/input-validate.png);
     }
+
     input.search,
     .input.search {
         background-image: url(../images/2/input-search.png);
     }
+
     select,
     .select {
         background-image: url(../images/2/select.png);
     }
+
     .icon.search-big {
         background-image: url(../images/2/search-big.png);
     }
+
     .check-line input:checked + label:before {
         background-image: url(../images/2/checkbox-a.png);
     }
+
     .check-line input[type="radio"]:checked + label:before {
         background-image: url(../images/2/radio-a.png);
     }
@@ -2883,18 +3259,23 @@ only screen and (min-device-pixel-ratio: 1.5) {
     .loader.big {
         background-image: url(../images/2/loader-big.png);
     }
+
     .loader.small {
         background-image: url(../images/2/loader-small.png);
     }
+
     .refresher .circle {
         background-image: url(../images/2/refresher-big.png);
     }
+
     .refresher .bottom {
         background-image: url(../images/2/logo-refresher.png);
     }
+
     .comments-list ul li {
         background-image: url(../images/2/comment.png);
     }
+
     .profile-image {
         background-image: url(../images/2/profile-image.png);
     }
@@ -2904,6 +3285,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     .start-logo img {
         background-image: url(../images/2/start-logo.png);
     }
+
     .start-buttons {
         background-image: url(../images/2/start-glow.png);
     }
@@ -2913,6 +3295,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     .sidebar-button.signout {
         background-image: url(../images/2/sign-out.png);
     }
+
     .sidebar-button.signout:active {
         background-image: url(../images/2/sign-out-a.png);
     }
@@ -2922,9 +3305,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
     .service-box-item.twitter img {
         background-image: url(../images/2/join-twitter.png);
     }
+
     .service-box-item.crowd img {
         background-image: url(../images/2/join-crowd.png);
     }
+
     .service-box-item.google img {
         background-image: url(../images/2/join-gplus.png);
     }
@@ -2937,27 +3322,14 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
     /* Main Menu */
 
-    .main-menu .tab-chat .image {
-        background-image: url(../images/2/tab-chat.png);
-    }
-    .main-menu .tab-invite .image {
-        background-image: url(../images/2/tab-invite.png);
-    }
-    .main-menu .tab-crowd .image {
-        background-image: url(../images/2/tab-crowd.png);
-    }
-    .main-menu .tab-feed .image {
-        background-image: url(../images/2/tab-feed.png);
-    }
-    .main-menu .tab-post .image {
-        background-image: url(../images/2/tab-post.png);
-    }
     .main-menu .add-gif .image {
         background-image: url(../images/2/add-gif.png);
     }
+
     .main-menu .add-photo .image {
         background-image: url(../images/2/add-photo.png);
     }
+
     .main-menu .add-text .image {
         background-image: url(../images/2/add-text.png);
     }
