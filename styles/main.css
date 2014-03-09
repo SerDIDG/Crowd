@@ -54,6 +54,7 @@ input, textarea {
 a {
     color: #1974bc;
     text-decoration: none;
+    cursor: pointer;
 }
 
 img {
@@ -1999,6 +2000,7 @@ fieldset {
 }
 
 .footer.has-button {
+    min-height: 44px;
     padding: 25px;
     position: absolute;
     z-index: 3;
@@ -2328,17 +2330,17 @@ fieldset {
 /* Chat Page */
 
 .page-chat-start {
-    padding: 13px 26px;
+    padding: 26px;
 }
 
 .chat-rooms {
-    margin: 29px 0 0;
+    margin: 26px 0 0;
     padding: 0;
     list-style: none;
 }
 
 .chat-rooms:first-child {
-    margin: 43px 0 0 0;
+    margin: 0;
 }
 
 .chat-rooms li {
@@ -3108,11 +3110,12 @@ fieldset {
     color: #2b2b2b;
 }
 
-/* ******* PAGE SIGNUP ******* */
+/* ******* PAGE SIGNUP / SIGNIN ******* */
 
 .page-signup {
 }
 
+.page-signin .form,
 .page-signup .form {
     padding: 16px;
 }
@@ -3168,8 +3171,66 @@ fieldset {
     background-size: contain;
 }
 
+.sign-social-buttons {
+    position: relative;
+}
+.sign-social-buttons > .l,
+.sign-social-buttons > .r {
+    width: 50%;
+    float: left;
+    -moz-box-sizing: border-box;
+          ox-sizing: border-box;
+}
+.sign-social-buttons > .l > .inner {
+    padding-right: 32px;
+}
+.sign-social-buttons > .r > .inner {
+    padding-left: 32px;
+}
+.sign-social-buttons .separator {
+    width: 1px;
+    position: absolute;
+    top: 24px;
+    bottom: 24px;
+    left: 50%;
+    background: #b3b3b3;
+}
+.sign-social-buttons .button {
+    height: auto;
+    padding-bottom: 100%;
+}
+.sign-social-buttons .button .icon {
+    top: 50%;
+    left: 50%;
+    margin: -22px 0 0 -22px;
+}
+.title-big {
+    text-align: center;
+    line-height: 42px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.page-signin .logo-inline-centered,
 .page-signup .logo-inline-centered {
     margin: 12px auto 0;
+}
+
+.page-signin .forgot {
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    font-size: 12px;
+    color: #fff;
+}
+.page-signin .forgot a {
+    color: inherit;
+}
+.page-signin .or-horizonal {
+    margin: 22px 0;
+}
+.page-signin .title-big {
+    margin: 8px 0 24px;
 }
 
 /* ******* ADAPTIVE ******* */
